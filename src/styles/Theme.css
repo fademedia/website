@@ -19,20 +19,28 @@
   @apply text-zinc-600 text-base;
 }
 
-/* Backgrounds */
 
-.custom-bg-dark1 {
-  @apply bg-customDarkBg1  fill-customDarkBg1;
-}
-.custom-bg-dark2 {
-  @apply bg-customDarkBg2  fill-customDarkBg2;
-}
-.custom-bg-dark3 {
-  @apply bg-customDarkBg3  fill-customDarkBg3;
-}
 body,
 html {
-  @apply bg-customDarkBg2;
+  @apply bg-merino bg-topography text-zinc-950;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 /* Borders */
@@ -53,7 +61,7 @@ html {
 /* Navbar */
 
 .navbar-link {
-  @apply text-zinc-950 lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2;
+  @apply text-zinc-950 text-xl leading-6 mx-4 cursor-pointer font-normal hover:scale-105 transition-transform duration-300 pt-2;
 }
 
 /* Preventing FOUC */

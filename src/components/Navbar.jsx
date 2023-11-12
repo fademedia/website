@@ -1,39 +1,104 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
+const NavbarLink = ({ href, label, ariaLabel, onClick }) => (
+  <a
+    className="navbar-link"
+    href={href}
+    aria-label={ariaLabel}
+    onClick={onClick}
+  >
+    {label}
+  </a>
+);
 
-const navbarLinks = [
-  { label: "Home", href: "#home", ariaLabel: "Home" },
-  { label: "About", href: "#features", ariaLabel: "About" },
-  { label: "Our Work", href: "#feedback", ariaLabel: "Our Work" },
-  { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
-  { label: "Contact", href: "#contact", ariaLabel: "Contact" },
-];
+const Logo = () => (
+  <a href="#home" aria-label="Home" className="flex items-center">
+    <motion.div
+      className="flex justify-start items-center grow basis-0"
+      whileHover={{ scale: 1.05 }}
+    >
+      <div className="mr-2 text-6xl">
+        <img className="w-16 h-16" src="/logo.png" alt="Fade Media Logo" />
+      </div>
+      <span className="text-3xl font-bold hidden sm:block">Fade Media</span>
+    </motion.div>
+  </a>
+);
+
+const MobileMenu = ({ isOpen, links, onClose }) => (
+  <AnimatePresence>
+    {isOpen && (
+      <motion.div
+        initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
+        animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
+        transition={{ duration: 0.3 }}
+        exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
+        className="bg-merino flex flex-col mt-16 lg:hidden absolute top-4 left-0 z-50 w-full items-center gap-10 pb-10 border-y border-solid pt-10"
+      >
+        {links.map(({ label, href, ariaLabel }) => (
+          <NavbarLink
+            key={href}
+            label={label}
+            href={href}
+            ariaLabel={ariaLabel}
+            onClick={onClose}
+          />
+        ))}
+        <a
+          className="text-YourColor rounded-xl pl-6 pr-8 pt-2 pb-2 text-sm flex"
+          href="https://github.com/matt765/Tidestream"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Contact us
+        </a>
+      </motion.div>
+    )}
+  </AnimatePresence>
+);
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  const navbarLinks = [
+    { label: "Home", href: "#home", ariaLabel: "Home" },
+    { label: "About", href: "#features", ariaLabel: "About" },
+    { label: "Our Work", href: "#feedback", ariaLabel: "Our Work" },
+    { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
+    { label: "Contact", href: "#contact", ariaLabel: "Contact" },
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setIsHidden(currentScrollPos > prevScrollPos && currentScrollPos > 0);
+      setPrevScrollPos(currentScrollPos);
+
+      // Close the mobile nav when scrolling
+      if (isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos, isOpen]);
 
   return (
-    <nav className="w-full h-20 flex flex-col justify-center items-center fixed z-40 lg:backdrop-blur-xl">
+    <nav
+      className={`w-full h-20 flex flex-col justify-center items-center fixed z-40 lg:backdrop-blur-xl ${
+        isHidden ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
-        >
-          <a className="navbar-link" href="#home" aria-label="Home">
-            <div className="flex justify-start items-center grow basis-0">
-              <div className="text-zinc-900 mr-2 text-6xl">
-                <TailcastLogo />
-              </div>
-              <div className="text-zinc-900 font-['Inter'] font-bold text-xl">
-                FadeMedia
-              </div>
-            </div>
-          </a>
-        </motion.div>
+        <Logo />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -42,14 +107,12 @@ export const Navbar = () => {
         >
           <div className="hidden lg:flex h-full pl-12 pb-2">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
-              <a
-                className="navbar-link"
-                href={href}
-                aria-label={ariaLabel}
+              <NavbarLink
                 key={label}
-              >
-                {label}
-              </a>
+                label={label}
+                href={href}
+                ariaLabel={ariaLabel}
+              />
             ))}
           </div>
         </motion.div>
@@ -61,7 +124,7 @@ export const Navbar = () => {
         >
           <div className="grow basis-0 justify-end hidden lg:flex">
             <a
-              className="text-zinc-900 custom-border-gray rounded-xl pl-6 pr-8 pt-2 pb-2 text-sm flex"
+              className={`text-YourColor rounded-xl pl-6 pr-8 pt-2 pb-2 text-sm flex`}
               href="#contact"
               rel="noreferrer"
               aria-label="Contact us"
@@ -71,50 +134,21 @@ export const Navbar = () => {
           </div>
         </motion.div>
         <div
-          className="lg:hidden flex flex-col  px-2 py-3 border-solid border rounded-md cursor-pointer"
+          className={`text-YourColor lg:backdrop-blur-xl lg:hidden flex flex-col px-2 py-3 border-solid border rounded-md cursor-pointer`}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <div className="w-5 h-0.5 mb-1"></div>
-          <div className="w-5 h-0.5 mb-1"></div>
-          <div className="w-5 h-0.5 "></div>
+          {isOpen ? (
+            <FaTimes size={20} color="text-zinc-950" />
+          ) : (
+            <FaBars size={20} color="text-zinc-900" />
+          )}
         </div>
       </div>
-      {/* Mobile navbar */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-            exit={{ opacity: 0 }}
-          >
-            <div
-              className="flex flex-col mt-16 lg:hidden absolute top-4 left-0   z-50 w-full 
-        items-center gap-10 pb-10 border-y border-solid  pt-10
-        "
-            >
-              {navbarLinks.map(({ label, href, ariaLabel }) => (
-                <a
-                  key={href}
-                  className="navbar-link"
-                  href={href}
-                  onClick={() => setIsOpen(false)}
-                  aria-label={ariaLabel}
-                >
-                  {label}
-                </a>
-              ))}
-              <a
-                className="text-zinc-900 custom-border-gray rounded-xl pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
-              >
-                Contact us
-              </a>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <MobileMenu
+        isOpen={isOpen}
+        links={navbarLinks}
+        onClose={() => setIsOpen(false)}
+      />
     </nav>
   );
 };
