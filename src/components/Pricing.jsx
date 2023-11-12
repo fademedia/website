@@ -27,7 +27,6 @@ export const Pricing = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="container mx-auto px-4">
@@ -142,7 +141,7 @@ export const Pricing = () => {
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    Experience the full power of our  analytic platform
+                    Experience the full power of our analytic platform
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-zinc-900">
                     {pricingData.map((text, index) => (

@@ -10,7 +10,6 @@ export const Features1 = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
@@ -21,8 +20,9 @@ export const Features1 = () => {
                 Unveiling Possibilities, Defining Excellence
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-              Navigating Boundaries, Shaping Tomorrow, Where Transformative Innovation Meets Digital Brilliance,
-              Crafting the Present, Defining the Future, One Breakthrough at a Time.
+                Navigating Boundaries, Shaping Tomorrow, Where Transformative
+                Innovation Meets Digital Brilliance, Crafting the Present,
+                Defining the Future, One Breakthrough at a Time.
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">

@@ -36,7 +36,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="text-zinc-800 text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-              Where Innovation Meets Digital Prowess in Marketing and Education
+            Where Innovation Meets Digital Prowess in Marketing and Education
           </div>
         </motion.div>
         <motion.div
@@ -72,8 +72,7 @@ export const Hero = () => {
             />
           </div>
         </motion.div>
-        <div className="relative w-screen flex justify-center ">
-        </div>
+        <div className="relative w-screen flex justify-center "></div>
       </div>
       {isModalOpen && (
         <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />

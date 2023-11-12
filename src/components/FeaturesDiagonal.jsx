@@ -12,7 +12,6 @@ export const FeaturesDiagonal = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">

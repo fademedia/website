@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-				topography: "url('/topography.svg')",
-			},
+        topography: "url('/topography.svg')",
+      },
       colors: {
         merino: "hsl(42, 28%, 93%)",
         quillgrey: "hsl(63, 19%, 81%)",
@@ -24,4 +24,3 @@ module.exports = {
     },
   },
 };
-

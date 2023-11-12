@@ -8,21 +8,24 @@ const testimonialsData = [
     customerTitle: "Founder of Dashflow",
     content:
       "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     customerName: "John Watkins",
     customerTitle: "Founder of Dashflow",
     content:
       "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
-    image: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     customerName: "John Watkins",
     customerTitle: "Founder of Dashflow",
     content:
       "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
-    image: "https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -33,7 +36,6 @@ export const Testimonials = () => (
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        
         transition={{ duration: 0.4, delay: 0.3 }}
       >
         <div className="custom-block-subtitle text-center mb-6">
@@ -56,7 +58,12 @@ export const Testimonials = () => (
                 "{testimonial.content}"
               </div>
               <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
-                <img class="w-10 h-14 rounded-full" src={testimonial.image} alt="" width="45px" />
+                <img
+                  class="w-10 h-14 rounded-full"
+                  src={testimonial.image}
+                  alt=""
+                  width="45px"
+                />
                 <div className="flex flex-col ml-4">
                   <div className="custom-content-text-white font-medium">
                     {testimonial.customerName}

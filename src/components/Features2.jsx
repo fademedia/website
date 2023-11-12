@@ -6,7 +6,6 @@ export const Features2 = () => (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">

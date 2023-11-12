@@ -19,7 +19,6 @@
   @apply text-zinc-600 text-base;
 }
 
-
 body,
 html {
   @apply bg-merino bg-topography text-zinc-950;
