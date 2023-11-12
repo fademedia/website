@@ -8,28 +8,14 @@ export const FeaturesDiagonal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-customDarkBg1">
-      <div className="custom-shape-divider-bottom-1665696614">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-          className="custom-bg-dark2"
-        >
-          <path
-            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-            className="custom-bg-dark1"
-          ></path>
-        </svg>
-      </div>
+    <section className="lg:mb-16 w-full flex flex-col justify-center items-center">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
+        <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
           <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
             <span className="custom-block-subtitle">
               Accelerate Your Success
@@ -51,27 +37,13 @@ export const FeaturesDiagonal = () => {
           </div>
           <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
             <img
-              src={featuresdiagonal}
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="f1"
               className="rounded-xl  custom-border-gray"
             />
           </div>
         </div>
       </motion.div>
-      <div className="custom-shape-divider-top-1665696661 w-full">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-          className="custom-bg-dark2"
-        >
-          <path
-            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-            className="custom-bg-dark1"
-          ></path>
-        </svg>
-      </div>
       {isModalOpen && (
         <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
       )}

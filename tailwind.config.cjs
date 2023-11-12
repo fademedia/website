@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      backgroundImage: {
+				topography: "url('/topography.svg')",
+			},
       colors: {
         customPrimary: "hsl(235, 60%, 65%)",
         customSecondary: "hsl(232, 55%, 76%)",

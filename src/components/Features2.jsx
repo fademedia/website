@@ -1,11 +1,8 @@
 import { motion } from "framer-motion";
-
-import feature5 from "../assets/images/feature5.jpg";
-import feature6 from "../assets/images/feature6.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Features2 = () => (
-  <section className="w-full bg-customDarkBg2 mt-12 sm:mt-20 mb-10 lg:my-20 pt-4">
+  <section className="w-full mt-12 sm:mt-20 mb-10 lg:my-20 pt-4">
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -17,15 +14,15 @@ export const Features2 = () => (
           <div className="mb-8 lg:mb-0 w-full px-2 lg:pl-16 flex flex-col justify-center md:pl-8">
             <div className="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
               <img
-                src={feature5}
-                alt="f1"
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Team Work"
                 className="rounded-xl  custom-border-gray"
               />
             </div>
             <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
               <img
-                src={feature6}
-                alt="f2"
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Team Work 2"
                 className="rounded-xl  custom-border-gray"
               />
             </div>

@@ -13,11 +13,11 @@ export const InvitationModal = ({ setIsOpen }) => (
       exit={{ opacity: 0 }}
     >
       <div
-        className="w-full h-full  bg-customDarkBgTransparentDarker fixed top-0 left-0 flex  z-50 justify-center items-center"
+        className="w-full h-full fixed top-0 left-0 flex  z-50 justify-center items-center"
         onClick={() => setIsOpen(false)}
       >
         <div
-          className="w-full h-screen sm:h-auto sm:w-3/4 md:w-3/5 lg:w-[1000px] xl:w-[1100px] sm:rounded-2xl bg-customDarkBgTransparentLighter custom-border-gray-darker py-12 px-8 sm:px-16 backdrop-blur-xl fixed sm:mb-8 mx-auto z-50"
+          className="w-full h-screen sm:h-auto sm:w-3/4 md:w-3/5 lg:w-[1000px] xl:w-[1100px] sm:rounded-2xl py-12 px-8 sm:px-16 backdrop-blur-xl fixed sm:mb-8 mx-auto z-50"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex relative">
@@ -60,7 +60,7 @@ export const InvitationModal = ({ setIsOpen }) => (
               <div className="flex flex-wrap -m-2">
                 <div className="w-full sm:w-4/5 p-2 mx-auto">
                   <input
-                    className="px-4 py-4 w-full text-gray-500 font-medium text-center placeholder-gray-500 outline-none border bg-gray-300 border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+                    className="px-4 py-4 w-full text-gray-500 font-medium text-center placeholder-gray-500 outline-none border bg-zinc-900 border-zinc-300 rounded-lg focus:ring focus:ring-indigo-300"
                     id="newsletterInput3-1"
                     type="text"
                     placeholder="Your email address"

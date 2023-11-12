@@ -1,15 +1,10 @@
 import { motion } from "framer-motion";
-
-import feature1 from "../assets/images/feature1.jpg";
-import feature2 from "../assets/images/feature2.jpg";
-import feature3 from "../assets/images/feature3.jpg";
-import feature4 from "../assets/images/feature4.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Features1 = () => {
   return (
     <section
-      className="w-full bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0  xl:m pt-[2rem]  md:pt-[12vw] lg:pt-0"
+      className="w-full mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0 xl:m pt-[2rem] md:pt-[12vw] lg:pt-0"
       id="features"
     >
       <motion.div
@@ -49,14 +44,14 @@ export const Features1 = () => {
             <div className="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
               <div className="mb-4 py-3 pl-3 pr-2 rounded">
                 <img
-                  src={feature1}
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="f1"
                   className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded ">
                 <img
-                  src={feature2}
+                  src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="f2"
                   className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
                 />
@@ -65,14 +60,14 @@ export const Features1 = () => {
             <div className="w-1/2 lg:mt-20  pt-12 lg:pt-0 px-2 hidden sm:inline-block">
               <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
                 <img
-                  src={feature3}
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="f3"
                   className="rounded-xl  custom-border-gray"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded-lg ">
                 <img
-                  src={feature4}
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="f4"
                   className="rounded-xl  custom-border-gray"
                 />
