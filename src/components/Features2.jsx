@@ -41,7 +41,7 @@ export const Features2 = () => (
               efficient issue tracking system. Stay ahead of potential problems
               and improve your workflow.
             </p>
-            <ul className="mb-6 text-white">
+            <ul className="mb-6 text-customGrayText">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
                 <span>Collaborative environment</span>

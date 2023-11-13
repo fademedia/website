@@ -1,17 +1,19 @@
 import React from 'react'
 
 export const Contact = () => (
-  <div id="contact">
-    <div className="flex flex-col items-center justify-center p-12">
-      <h2 className="pt-10 mb-5 custom-block-big-title text-center">Contact Us</h2>
-      <div className="mx-auto w-full max-w-[550px]">
+  <div id="contact" className="flex flex-col items-center pt-20 mb-12">
+    <div className="px-9 lg:px-12 bg-whiterock pb-10 rounded-lg">
+      <h2 className="pt-10 mb-5 custom-block-big-title text-center">
+        Contact Us
+      </h2>
+      <div className="mx-auto lg:w-[500px] max-w-[500px]">
         <form action="https://formbold.com/s/FORM_ID" method="POST">
           <div className="mb-5">
             <label
               htmlFor="name"
               className="mb-3 block text-base font-medium text-[#07074D]"
             >
-            Name
+              Name
             </label>
             <input
               type="text"
@@ -68,7 +70,7 @@ export const Contact = () => (
             />
           </div>
           <div>
-            <button className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none">
+            <button className="hover:shadow-form rounded-md custom-button-colored py-3 px-8 text-base font-semibold text-white outline-none">
               Submit
             </button>
           </div>

@@ -54,14 +54,15 @@ html {
 /* Buttons */
 
 .custom-button-colored {
-  @apply rounded-lg font-bold bg-sagegreen text-black flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
+  @apply rounded-lg font-bold bg-sagegreen text-zinc-900 flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
 }
 
 /* Navbar */
 
 .navbar-link {
-  @apply text-zinc-950 text-xl leading-6 mx-4 cursor-pointer font-normal hover:scale-105 transition-transform duration-300 pt-2;
+  @apply text-zinc-950 text-xl leading-6 mx-4 cursor-pointer font-semibold hover:scale-105 transition-transform duration-300 pt-2;
 }
+
 
 /* Preventing FOUC */
 @font-face {

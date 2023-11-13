@@ -67,7 +67,6 @@ export const Navbar = () => {
     { label: "About", href: "#features", ariaLabel: "About" },
     { label: "Our Work", href: "#feedback", ariaLabel: "Our Work" },
     { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
-    { label: "Contact", href: "#contact", ariaLabel: "Contact" },
   ];
 
   useEffect(() => {
@@ -93,7 +92,7 @@ export const Navbar = () => {
     <nav
       className={`w-full h-20 flex flex-col justify-center items-center fixed bg-merino z-40 backdrop-blur-3xl shadow-md ${"translate-y-0"}`}
     >
-      <div className="w-full flex justify-between items-center relative">
+      <div className="2xl:w-[1380px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
         <Logo />
         <motion.div
           initial={{ opacity: 0 }}
@@ -101,7 +100,7 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className="hidden lg:flex h-full pr-12 pb-2">
+          <div className="hidden lg:flex h-full mr-12 pb-2">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <NavbarLink
                 key={label}
