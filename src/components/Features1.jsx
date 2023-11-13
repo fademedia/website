@@ -4,7 +4,7 @@ import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 export const Features1 = () => {
   return (
     <section
-      className="w-full mb-8 sm:pt-16 sm:mb-16 xl:mt-0 md:pt-[12vw] lg:pt-24"
+      className="w-full mb-8 pt-24 sm:pt-32 sm:mb-16 xl:mt-0 md:pt-[12vw] lg:pt-24"
       id="features"
     >
       <motion.div

@@ -38,11 +38,11 @@ export const Testimonials = () => (
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.4, delay: 0.3 }}
       >
-        <div className="custom-block-subtitle text-center mb-6">
+        <div className="custom-block-big-title text-center mb-6">
           Testimonials
         </div>
-        <div className="custom-block-big-title text-center mb-16 px-8 sm:px-24 md:px-48">
-          People like you love Tailcast
+        <div className="custom-block-title text-center mb-16 px-8 sm:px-24 md:px-48">
+          People like you love Fade Media
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
@@ -59,10 +59,11 @@ export const Testimonials = () => (
               </div>
               <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
                 <img
-                  class="w-10 h-14 rounded-full"
+                  class="w-14 h-14 rounded-full object-fill"
                   src={testimonial.image}
                   alt=""
                   width="45px"
+                  height="45px"
                 />
                 <div className="flex flex-col ml-4">
                   <div className="custom-content-text-white font-medium">

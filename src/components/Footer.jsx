@@ -54,19 +54,19 @@ export const Footer = () => {
               </p>
               <div className="w-36 mx-auto lg:mx-0">
                 <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                  className="inline-block w-10  h-10 mr-2 p-2 bg-sagegreen custom-border-gray  hover:bg-gray-700 rounded-xl"
                   href="#"
                 >
                   <FacebookIcon />
                 </a>
                 <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                  className="inline-block w-10  h-10 mr-2 p-2 bg-sagegreen custom-border-gray  hover:bg-gray-700 rounded-xl"
                   href="#"
                 >
                   <TwitterIcon />
                 </a>
                 <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                  className="inline-block w-10  h-10 mr-2 p-2 bg-sagegreen custom-border-gray  hover:bg-gray-700 rounded-xl"
                   href="#"
                 >
                   <InstagramIcon />

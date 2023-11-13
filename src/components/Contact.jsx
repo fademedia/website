@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Contact = () => (
   <div id="contact" className="flex flex-col items-center pt-20 mb-12">
-    <div className="px-9 lg:px-12 bg-whiterock pb-10 rounded-lg shadow-xl">
+    <div className="px-9 md:px-12 bg-whiterock pb-10 rounded-lg shadow-xl">
       <h2 className="pt-10 mb-5 custom-block-big-title text-center">
         Contact Us
       </h2>
@@ -11,7 +11,7 @@ export const Contact = () => (
           <div className="mb-5">
             <label
               htmlFor="name"
-              className="mb-3 block text-base font-medium text-[#07074D]"
+              className="mb-3 block text-base font-medium text-stone-800"
             >
               Name
             </label>
@@ -20,13 +20,13 @@ export const Contact = () => (
               name="name"
               id="name"
               placeholder="Enter Name"
-              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-sagegreen focus:shadow-md"
+              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-stone-800 outline-none focus:border-sagegreen focus:shadow-md"
             />
           </div>
           <div className="mb-5">
             <label
               htmlFor="email"
-              className="mb-3 block text-base font-medium text-[#07074D]"
+              className="mb-3 block text-base font-medium text-stone-800"
             >
               Email Address
             </label>
@@ -35,28 +35,28 @@ export const Contact = () => (
               name="email"
               id="email"
               placeholder="example@domain.com"
-              className="w-full rounded-md border border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-sagegreen focus:shadow-md"
+              className="w-full rounded-md border border-[#e0e0e0] py-3 px-6 text-base font-medium text-stone-800 outline-none focus:border-sagegreen focus:shadow-md"
             />
           </div>
           <div className="mb-5">
             <label
-              htmlFor="subject"
-              className="mb-3 block text-base font-medium text-[#07074D]"
+              htmlFor="phone"
+              className="mb-3 block text-base font-medium text-stone-800"
             >
               Phone Number
             </label>
             <input
-              type="text"
-              name="subject"
-              id="subject"
+              type="number"
+              name="phone"
+              id="phone"
               placeholder="Enter Phone Number"
-              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-sagegreen focus:shadow-md"
+              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-stone-800 outline-none focus:border-sagegreen focus:shadow-md"
             />
           </div>
           <div className="mb-5">
             <label
               htmlFor="message"
-              className="mb-3 block text-base font-medium text-[#07074D]"
+              className="mb-3 block text-base font-medium text-stone-800"
             >
               Message
             </label>
@@ -65,7 +65,7 @@ export const Contact = () => (
               name="message"
               id="message"
               placeholder="Type your message"
-              className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-sagegreen focus:shadow-md"
+              className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-stone-800 outline-none focus:border-sagegreen focus:shadow-md"
               defaultValue={""}
             />
           </div>
