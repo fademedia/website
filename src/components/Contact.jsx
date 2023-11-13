@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Contact = () => (
   <div id="contact" className="flex flex-col items-center pt-20 mb-12">
-    <div className="px-9 lg:px-12 bg-whiterock pb-10 rounded-lg">
+    <div className="px-9 lg:px-12 bg-whiterock pb-10 rounded-lg shadow-xl">
       <h2 className="pt-10 mb-5 custom-block-big-title text-center">
         Contact Us
       </h2>
@@ -20,7 +20,7 @@ export const Contact = () => (
               name="name"
               id="name"
               placeholder="Enter Name"
-              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-sagegreen focus:shadow-md"
             />
           </div>
           <div className="mb-5">
@@ -35,7 +35,7 @@ export const Contact = () => (
               name="email"
               id="email"
               placeholder="example@domain.com"
-              className="w-full rounded-md border border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              className="w-full rounded-md border border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-sagegreen focus:shadow-md"
             />
           </div>
           <div className="mb-5">
@@ -50,7 +50,7 @@ export const Contact = () => (
               name="subject"
               id="subject"
               placeholder="Enter Phone Number"
-              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-sagegreen focus:shadow-md"
             />
           </div>
           <div className="mb-5">
@@ -65,7 +65,7 @@ export const Contact = () => (
               name="message"
               id="message"
               placeholder="Type your message"
-              className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-sagegreen focus:shadow-md"
               defaultValue={""}
             />
           </div>

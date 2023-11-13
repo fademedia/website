@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         topography: "url('/topography.svg')",
       },
+      boxShadow: {
+        dark: "35px -30px 0 0 hsl(0, 0%, 45%)",
+      },
       colors: {
         merino: "hsl(42, 28%, 93%)",
         quillgrey: "hsl(63, 19%, 81%)",

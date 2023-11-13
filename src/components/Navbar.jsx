@@ -65,7 +65,7 @@ export const Navbar = () => {
   const navbarLinks = [
     { label: "Home", href: "#home", ariaLabel: "Home" },
     { label: "About", href: "#features", ariaLabel: "About" },
-    { label: "Our Work", href: "#feedback", ariaLabel: "Our Work" },
+    { label: "Testimonials", href: "#feedback", ariaLabel: "Our Work" },
     { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
   ];
 

@@ -4,7 +4,7 @@ import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 export const Features1 = () => {
   return (
     <section
-      className="w-full mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0 xl:m pt-[2rem] md:pt-[12vw] lg:pt-0"
+      className="w-full mb-8 sm:pt-16 sm:mb-16 xl:mt-0 md:pt-[12vw] lg:pt-24"
       id="features"
     >
       <motion.div
@@ -13,9 +13,11 @@ export const Features1 = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
+          <h2 className="custom-block-big-title text-center font-bold w-full">
+            About Us
+          </h2>
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-              <span className="custom-block-subtitle">About Us</span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
                 Unveiling Possibilities, Defining Excellence
               </h2>
@@ -24,7 +26,7 @@ export const Features1 = () => {
                 Innovation Meets Digital Brilliance, Crafting the Present,
                 Defining the Future, One Breakthrough at a Time.
               </p>
-              <ul className="mb-6 text-white">
+              <ul className="mb-6 custom-content-text-white">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
                   <span>Innovative Architects</span>
