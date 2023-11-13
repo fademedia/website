@@ -21,7 +21,7 @@
 
 body,
 html {
-  @apply bg-merino bg-topography text-zinc-950;
+  @apply bg-white bg-topography text-zinc-950;
 }
 
 ::-webkit-scrollbar {
@@ -54,7 +54,7 @@ html {
 /* Buttons */
 
 .custom-button-colored {
-  @apply rounded-lg font-bold bg-customPrimary text-zinc-900 flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
+  @apply rounded-lg font-bold bg-sagegreen text-black flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
 }
 
 /* Navbar */

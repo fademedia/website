@@ -37,7 +37,7 @@ export const Footer = () => {
                   <TailcastLogo />
                 </div>
                 <div className="text-zinc-950 font-['Inter'] font-bold text-xl">
-                  FadeMedia
+                  Fade Media
                 </div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-zinc-700 leading-loose text-center lg:text-left mx-auto lg:mx-0">

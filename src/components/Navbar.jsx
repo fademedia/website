@@ -20,7 +20,7 @@ const Logo = () => (
       whileHover={{ scale: 1.05 }}
     >
       <div className="mr-2 text-6xl">
-        <img className="w-16 h-16" src="/logo.png" alt="Fade Media Logo" />
+        <img className="w-16 h-16 scale-150" src="/logo.png" alt="Fade Media Logo" />
       </div>
       <span className="text-3xl font-bold hidden sm:block">Fade Media</span>
     </motion.div>
@@ -47,12 +47,10 @@ const MobileMenu = ({ isOpen, links, onClose }) => (
           />
         ))}
         <a
-          className="text-YourColor rounded-xl pl-6 pr-8 pt-2 pb-2 text-sm flex"
-          href="https://github.com/matt765/Tidestream"
-          target="_blank"
-          rel="noreferrer"
+          className="custom-button-colored w-40 sm:w-40 h-12 mr-0 sm:mr-4 lg:mr-4 mb-2 sm:mb-0"
+          href="#contact"
         >
-          Contact us
+          Contact Us
         </a>
       </motion.div>
     )}
@@ -93,11 +91,9 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`w-full h-20 flex flex-col justify-center items-center fixed z-40 lg:backdrop-blur-xl ${
-        isHidden ? "-translate-y-full" : "translate-y-0"
-      }`}
+      className={`w-full h-20 flex flex-col justify-center items-center fixed bg-merino z-40 backdrop-blur-3xl shadow-md ${"translate-y-0"}`}
     >
-      <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
+      <div className="w-full flex justify-between items-center relative">
         <Logo />
         <motion.div
           initial={{ opacity: 0 }}
@@ -105,7 +101,7 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className="hidden lg:flex h-full pl-12 pb-2">
+          <div className="hidden lg:flex h-full pr-12 pb-2">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <NavbarLink
                 key={label}
@@ -124,17 +120,15 @@ export const Navbar = () => {
         >
           <div className="grow basis-0 justify-end hidden lg:flex">
             <a
-              className={`text-YourColor rounded-xl pl-6 pr-8 pt-2 pb-2 text-sm flex`}
+              className="custom-button-colored sm:w-40 h-12 mr-0 sm:mr-4 lg:mr-4 mb-2 sm:mb-0"
               href="#contact"
-              rel="noreferrer"
-              aria-label="Contact us"
             >
-              <span className="pt-px">Contact us</span>
+              Contact Us
             </a>
           </div>
         </motion.div>
         <div
-          className={`text-YourColor lg:backdrop-blur-xl lg:hidden flex flex-col px-2 py-3 border-solid border rounded-md cursor-pointer`}
+          className={`text-YourColor lg:backdrop-blur-xl lg:hidden flex flex-col px-2 py-2 mx-2 border-solid border border-zinc-400 rounded-md cursor-pointer`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
