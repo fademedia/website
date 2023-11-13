@@ -59,7 +59,7 @@ export const Testimonials = () => (
               </div>
               <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
                 <img
-                  class="w-14 h-14 rounded-full object-fill"
+                  className="w-14 h-14 rounded-full object-fill"
                   src={testimonial.image}
                   alt=""
                   width="45px"
