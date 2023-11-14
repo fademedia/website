@@ -8,6 +8,7 @@ module.exports = {
       },
       boxShadow: {
         dark: "35px -30px 0 0 hsl(0, 0%, 45%)",
+        extradark: "45px -40px 0 0 hsl(0, 0%, 30%)",
       },
       colors: {
         merino: "hsl(42, 28%, 93%)",

@@ -66,7 +66,7 @@ export const Navbar = () => {
     { label: "Home", href: "#home", ariaLabel: "Home" },
     { label: "About", href: "#features", ariaLabel: "About" },
     { label: "Testimonials", href: "#feedback", ariaLabel: "Our Work" },
-    { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
+    { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
   ];
 
   useEffect(() => {

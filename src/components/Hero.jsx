@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
+import RotatingText from "./RotatingText";
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,7 +28,9 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.05 }}
         >
           <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-zinc-900  px-8 sm:px-8 md:px-20 lg:px-4">
-            <span className="md:inline">Redefining Digital Excellence</span>
+            <span className="md:inline">
+              Redefining Digital Visionaries
+            </span>
           </div>
         </motion.div>
         <motion.div
@@ -46,9 +49,9 @@ export const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="mt-16 flex items-center">
+        <div className="mt-16 flex items-center cursor-pointer">
           <img
-            className="rounded-xl scale-75 shadow-dark"
+            className="rounded-xl scale-75 shadow-dark hover:translate-x-4 hover:shadow-extradark duration-700"
             src="https://raw.githubusercontent.com/jenisnmm/images/main/F%20(V2)(BLACK)%20CREAM%20BG.svg"
             alt="hero-image"
           />
