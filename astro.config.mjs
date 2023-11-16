@@ -8,5 +8,6 @@ export default defineConfig({
     ssr: {
       noExternal: ["react-icons"],
     },
+    assetsInclude: "**/*.lottie",
   },
 });

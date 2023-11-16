@@ -95,7 +95,7 @@ export const Navbar = () => {
     >
       <div className="2xl:w-[1380px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
         <Logo />
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
@@ -111,7 +111,7 @@ export const Navbar = () => {
               />
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

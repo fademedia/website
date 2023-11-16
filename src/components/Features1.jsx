@@ -1,10 +1,15 @@
 import { motion } from "framer-motion";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import Lottie from "lottie-react";
+import one from "../assets/lottie/one.json";
+import two from "../assets/lottie/two.json";
+import three from "../assets/lottie/three.json";
+import four from "../assets/lottie/four.json";
 
 export const Features1 = () => {
   return (
     <section
-      className="w-full pt-10 mb-8 sm:mb-16 xl:mt-0"
+      className="w-full pt-10 mb-8 sm:mb-16 xl:mt-0 text-white" // Set background color to black and text color to white
       id="features"
     >
       <motion.div
@@ -14,7 +19,7 @@ export const Features1 = () => {
       >
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
           <h2 className="custom-block-big-title text-center font-bold w-full">
-            About Us
+            What we do ?
           </h2>
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
@@ -44,35 +49,25 @@ export const Features1 = () => {
           </div>
           <div className="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
             <div className="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
-              <div className="mb-4 py-3 pl-3 pr-2 rounded">
-                <img
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="f1"
-                  className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
-                />
+              <div
+                className="mb-4 py-3 pl-3 pr-2 rounded"
+                style={{ zIndex: 2 }}
+              >
+                <Lottie animationData={four} />
               </div>
-              <div className="py-3 pl-3 pr-2 rounded ">
-                <img
-                  src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="f2"
-                  className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
-                />
+              <div className="py-3 pl-3 pr-2 rounded" style={{ zIndex: 1 }}>
+                <Lottie animationData={three} />
               </div>
             </div>
             <div className="w-1/2 lg:mt-20  pt-12 lg:pt-0 px-2 hidden sm:inline-block">
-              <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
-                <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="f3"
-                  className="rounded-xl  custom-border-gray"
-                />
+              <div
+                className="mb-4 py-3 pl-3 pr-2 rounded-lg"
+                style={{ zIndex: 4 }}
+              >
+                <Lottie animationData={two} />
               </div>
-              <div className="py-3 pl-3 pr-2 rounded-lg ">
-                <img
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="f4"
-                  className="rounded-xl  custom-border-gray"
-                />
+              <div className="py-3 pl-3 pr-2 rounded-lg" style={{ zIndex: 3 }}>
+                <Lottie animationData={one} />
               </div>
             </div>
           </div>
