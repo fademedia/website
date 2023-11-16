@@ -1,16 +1,16 @@
 /* Typography */
 
 .custom-block-title {
-  @apply text-zinc-950 text-3xl font-bold tracking-normal;
+  @apply text-zinc-200 text-3xl font-bold tracking-normal;
 }
 .custom-block-big-title {
-  @apply text-zinc-950 text-4xl xl:text-5xl font-bold tracking-normal;
+  @apply text-zinc-200 text-4xl xl:text-5xl font-bold tracking-normal;
 }
 .custom-block-subtitle {
-  @apply text-xs text-zinc-900  tracking-wider font-bold uppercase;
+  @apply text-xs text-zinc-200  tracking-wider font-bold uppercase;
 }
 .custom-content-title {
-  @apply text-zinc-800 text-lg font-bold tracking-normal;
+  @apply text-zinc-200 text-lg font-bold tracking-normal;
 }
 .custom-content-text-white {
   @apply text-zinc-700 text-base leading-relaxed;
@@ -21,7 +21,7 @@
 
 body,
 html {
-  @apply bg-white bg-topography text-zinc-950;
+  @apply bg-zinc-900 bg-topography text-zinc-950;
 }
 
 ::-webkit-scrollbar {
@@ -59,10 +59,22 @@ html {
 
 /* Navbar */
 
-.navbar-link {
-  @apply text-zinc-950 text-xl leading-6 mx-4 cursor-pointer font-medium hover:scale-105 transition-transform duration-300 pt-2;
+.navbar {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px #121212;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
+.logo:hover ~ span{
+  transition: opacity 1s, transform 0.5s;
+  transform: translateX(0.2rem);
+  opacity: 100;
+} 
+
+.navbar-link {
+  @apply text-zinc-200 text-xl leading-6 mx-4 cursor-pointer font-medium hover:scale-105 transition-transform duration-300 pt-2;
+}
 
 /* Preventing FOUC */
 @font-face {

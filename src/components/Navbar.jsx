@@ -15,15 +15,14 @@ const NavbarLink = ({ href, label, ariaLabel, onClick }) => (
 
 const Logo = () => (
   <a href="#home" aria-label="Home" className="flex items-center">
-    <motion.div
-      className="flex justify-start items-center grow basis-0"
-      whileHover={{ scale: 1.05 }}
-    >
-      <div className="mr-2 text-6xl">
-        <img className="w-16 h-16 scale-150" src="/logo.png" alt="Fade Media Logo" />
-      </div>
-      <span className="text-3xl font-bold hidden sm:block">Fade Media</span>
-    </motion.div>
+      <img
+        className="logo w-16 h-16 invert"
+        src="/logo.png"
+        alt="Fade Media Logo"
+      />
+      <span className="text-3xl opacity-0 text-zinc-200 font-bold">
+        Fade Media
+      </span>
   </a>
 );
 
@@ -35,7 +34,7 @@ const MobileMenu = ({ isOpen, links, onClose }) => (
         animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
         transition={{ duration: 0.3 }}
         exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
-        className="bg-merino flex flex-col mt-16 lg:hidden absolute top-4 left-0 z-50 w-full items-center gap-10 pb-10 border-y border-solid pt-10"
+        className="navbar flex flex-col mt-16 lg:hidden absolute top-4 left-0 z-50 w-full items-center gap-10 pb-10 border-y border-solid pt-10"
       >
         {links.map(({ label, href, ariaLabel }) => (
           <NavbarLink
@@ -90,7 +89,9 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`w-full h-20 flex flex-col justify-center items-center fixed bg-merino z-40 backdrop-blur-3xl shadow-md ${"translate-y-0"}`}
+      className={`w-full h-20 flex flex-col justify-center items-center fixed z-40 duration-300 navbar ${
+        isHidden ? "-translate-y-full" : "translate-y-0"
+      }`}
     >
       <div className="2xl:w-[1380px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
         <Logo />
@@ -131,9 +132,9 @@ export const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
-            <FaTimes size={20} color="text-zinc-950" />
+            <FaTimes size={20} color="white" />
           ) : (
-            <FaBars size={20} color="text-zinc-900" />
+            <FaBars size={20} color="white" />
           )}
         </div>
       </div>

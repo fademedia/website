@@ -18,10 +18,10 @@ export const Brands = () => (
         <div className="flex lg:flex-row flex-col items-center -mx-4 justify-center lg:text-left text-center">
           <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
             <div className="flex flex-col">
-              <h2 className="mb-2 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-zinc-950">
+              <h2 className="mb-2 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-zinc-200">
                 Trusted by brands
               </h2>
-              <h2 className=" text-4xl  sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-customSecondary">
+              <h2 className=" text-4xl  sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-zinc-200">
                 all over the world
               </h2>
             </div>

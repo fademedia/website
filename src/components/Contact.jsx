@@ -3,10 +3,10 @@ import React from 'react'
 export const Contact = () => (
   <div id="contact" className="flex flex-col items-center pt-20 mb-12">
     <div className="px-9 md:px-12 bg-whiterock pb-10 rounded-lg shadow-xl">
-      <h2 className="pt-10 mb-5 custom-block-big-title text-center">
+      <h2 className="pt-10 mb-5 text-black font-bold text-5xl text-center">
         Contact Us
       </h2>
-      <div className="mx-auto lg:w-[500px] max-w-[500px]">
+      <div className="mx-auto sm:min-w-[320px] md:min-w-[480px] lg:min-w-[500px]">
         <form action="https://formbold.com/s/FORM_ID" method="POST">
           <div className="mb-5">
             <label
