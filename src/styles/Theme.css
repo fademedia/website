@@ -10,7 +10,7 @@
   @apply text-xs text-zinc-200  tracking-wider font-bold uppercase;
 }
 .custom-content-title {
-  @apply text-zinc-200 text-lg font-bold tracking-normal;
+  @apply text-zinc-700 text-lg font-bold tracking-normal;
 }
 .custom-content-text-white {
   @apply text-zinc-700 text-base leading-relaxed;
@@ -22,6 +22,7 @@
 body,
 html {
   @apply bg-zinc-900 bg-topography text-zinc-950;
+  background-image: url('./topography.svg');
 }
 
 ::-webkit-scrollbar {
@@ -62,8 +63,8 @@ html {
 .navbar {
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 10px #121212;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
 }
 
 .logo:hover ~ span{
@@ -75,6 +76,15 @@ html {
 .navbar-link {
   @apply text-zinc-200 text-xl leading-6 mx-4 cursor-pointer font-medium hover:scale-105 transition-transform duration-300 pt-2;
 }
+
+/* .testimonials {
+  background: rgba( 43, 43, 43, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+} */
 
 /* Preventing FOUC */
 @font-face {

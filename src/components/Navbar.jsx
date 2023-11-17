@@ -46,7 +46,7 @@ const MobileMenu = ({ isOpen, links, onClose }) => (
           />
         ))}
         <a
-          className="custom-button-colored w-40 sm:w-40 h-12 mr-0 sm:mr-4 lg:mr-4 mb-2 sm:mb-0"
+          className="custom-button-colored w-40 sm:w-40 h-12 mr-0 lg:mr-4 mb-2 sm:mb-0"
           href="#contact"
         >
           Contact Us

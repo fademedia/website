@@ -66,7 +66,7 @@ export const Clients = () => {
       People work with us, not just for us.
       </div>
       <motion.div
-        className="marquee-container inline-block"
+        className="marquee-container inline-block py-24"
         variants={marqueeVariants}
         initial="initial"
         animate="animate"
@@ -75,7 +75,7 @@ export const Clients = () => {
         {logos.map((logo, index) => (
           <motion.div
             key={index}
-            className="logo-container inline-block hover:filter-none filter grayscale"
+            className="logo-container flex hover:filter-none filter grayscale justify-center"
           >
             {logo}
           </motion.div>

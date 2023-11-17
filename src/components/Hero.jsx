@@ -22,11 +22,11 @@ export const Hero = () => {
         variants={containerVariants}
         transition={{ duration: 0.5, delay: 0.05 }}
       >
-        <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide leading-normal h-[100vh] -translate-y-20 flex justify-center items-center px-8 sm:px-8 md:px-20 lg:px-4">
+        <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide leading-relaxed h-screen -translate-y-5 flex justify-center items-center">
           <motion.span
             variants={textVariants}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="md:inline bg-gradient-to-r from-purple-600 to-purple-500 text-transparent bg-clip-text tracking-wide whitespace-nowrap"
+            className="md:inline bg-gradient-to-t from-purple-200 via-purple-400 to-purple-800 text-transparent bg-clip-text tracking-wide sm:leading-relaxed text-center "
           >
             Digital Visionaries
           </motion.span>
