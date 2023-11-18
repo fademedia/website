@@ -139,7 +139,7 @@ export const Contact = () => (
                       id="name"
                       autoComplete="given-name"
                       placeholder="Your name"
-                      className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                      className="mb-2 w-full rounded-md border border-gray-300 bg-[#1A1B1C] py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                       name="name"
                     />
                   </div>
@@ -153,7 +153,7 @@ export const Contact = () => (
                       id="email"
                       autoComplete="email"
                       placeholder="Your email address"
-                      className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                      className="mb-2 w-full rounded-md border border-gray-300 bg-[#1A1B1C] py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                       name="email"
                     />
                   </div>
@@ -167,7 +167,7 @@ export const Contact = () => (
                       id="phone"
                       autoComplete="email"
                       placeholder="Your phone number"
-                      className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                      className="mb-2 w-full rounded-md border border-gray-300 bg-[#1A1B1C] py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                       name="phone"
                     />
                   </div>
@@ -183,7 +183,7 @@ export const Contact = () => (
                     cols={30}
                     rows={5}
                     placeholder="Write your message..."
-                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                    className="mb-2 w-full rounded-md border border-gray-300 bg-[#1A1B1C] py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                     defaultValue={""}
                   />
                 </div>

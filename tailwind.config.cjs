@@ -22,6 +22,7 @@ module.exports = {
       },
       fontFamily: {
         Inter: "Inter",
+        Pacifico: ["Pacifico", "cursive"],
       },
       screens: {
         "2xl": "1536px",

@@ -1,4 +1,5 @@
 /* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .custom-block-title {
   @apply text-zinc-200 text-3xl font-bold tracking-normal;

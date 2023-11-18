@@ -25,11 +25,11 @@ export const Hero = () => {
         transition={{ duration: 0.5, delay: 0.05 }}
       >
         
-        <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide leading-relaxed h-screen -translate-y-5 flex justify-center items-center">
+        <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-semibold tracking-wide leading-relaxed h-screen -translate-y-5 flex justify-center items-center">
           <motion.span
             variants={textVariants}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="md:inline bg-gradient-to-t from-purple-200 via-purple-400 to-purple-800 text-transparent bg-clip-text tracking-wide sm:leading-relaxed text-center"
+            className="md:inline bg-gradient-to-t from-purple-200 via-purple-400 to-purple-800 text-transparent bg-clip-text tracking-wide sm:leading-loose text-center font-Pacifico"
           >
             Digital Visionaries.
           </motion.span>
