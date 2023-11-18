@@ -1,20 +1,22 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-export const ScrollUpButton = () => {
+interface ScrollUpButtonProps {}
+
+const ScrollUpButton: React.FC<ScrollUpButtonProps> = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", toggleVisible);
-  }, []);
+    const handleScroll = () => {
+      const scrolled = document.documentElement.scrollTop;
+      setIsVisible(scrolled > 300);
+    };
 
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setIsVisible(true);
-    } else if (scrolled <= 300) {
-      setIsVisible(false);
-    }
-  };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -50,3 +52,5 @@ export const ScrollUpButton = () => {
     </>
   );
 };
+
+export default ScrollUpButton;

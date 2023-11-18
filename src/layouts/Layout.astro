@@ -5,7 +5,10 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
-
+import { Navbar } from "../components/Navbar.jsx";
+import Footer from "../components/Footer.astro";
+import ScrollUpButton from "../components/ScrollUpButton";
+import Circle from "../components/shared/Circle.astro";
 export interface Props {
   title: string;
 }
@@ -27,11 +30,16 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <Navbar client:load />
+    <Circle position="top" />
+    <Circle position="bottom" />
     <slot />
+    <Footer />
+    <ScrollUpButton client:load />
     <style is:global>
       html {
         font-family: Inter;
-        background-color: #26272b;
+
         overflow-x: hidden;
         scroll-behavior: smooth;
       }

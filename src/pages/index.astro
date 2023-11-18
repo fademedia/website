@@ -1,26 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Hero } from "../components/Hero.jsx";
-import { Navbar } from "../components/Navbar.jsx";
+import Hero from "../components/Hero.astro";
 import { Features1 } from "../components/Features1.jsx";
-import { Testimonials } from "../components/Testimonials.jsx";
-import { Clients } from "../components/Clients.jsx";
-import { FAQ } from "../components/FAQ.jsx";
-import { Footer } from "../components/Footer.jsx";
-import { ScrollUpButton } from "../components/ScrollUpButton";
-import { Contact } from "../components/Contact.jsx";
+import Testimonials from "../components/Testimonials.astro";
+import Clients from "../components/Clients.astro";
+import FAQ from "../components/FAQ.astro";
+import Contact from "../components/Contact.astro";
 import "../styles/Theme.css";
 import "../styles/Diagonals.css";
 ---
 
 <Layout title="Fade Media">
-  <Navbar client:load />
-  <Hero client:load />
+  <Hero />
   <!-- <Features1 client:load /> -->
-  <Testimonials client:load />
-  <Clients client:load />
-  <FAQ client:load />
-  <Contact client:load />
-  <Footer />
-  <ScrollUpButton client:load />
+  <Testimonials />
+  <!-- <Clients client:load /> -->
+  <FAQ />
+  <Contact />
 </Layout>

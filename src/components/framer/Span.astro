@@ -1,0 +1,28 @@
+---
+import clsx from "clsx";
+import { motion } from "framer-motion";
+
+export interface FramerMotionSpanProps {
+  classes?: string;
+  x?: number;
+  y?: number;
+  once?: boolean;
+  repeatable?: boolean;
+  delay?: number;
+  duration?: number;
+}
+const { classes, x, y, repeatable, delay, duration }: FramerMotionSpanProps =
+  Astro.props;
+---
+
+<motion.span
+  initial={{ opacity: 0, x, y }}
+  whileInView={{ opacity: 1, x: 0, y: 0 }}
+  viewport={{ once: repeatable }}
+  transition={{ duration, delay }}
+  client:visible
+>
+  <div class={clsx(classes)}>
+    <slot />
+  </div>
+</motion.span>
