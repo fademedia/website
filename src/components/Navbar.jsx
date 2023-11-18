@@ -16,11 +16,11 @@ const NavbarLink = ({ href, label, ariaLabel, onClick }) => (
 const Logo = () => (
   <a href="#home" aria-label="Home" className="flex items-center">
       <img
-        className="logo w-16 h-16 invert"
+        className="logo w-16 h-16 invert z-30"
         src="/logo.png"
         alt="Fade Media Logo"
       />
-      <span className="text-3xl opacity-0 text-zinc-200 font-bold">
+      <span className="text-3xl absolute opacity-0 text-zinc-200 font-bold">
         Fade Media
       </span>
   </a>
@@ -34,7 +34,7 @@ const MobileMenu = ({ isOpen, links, onClose }) => (
         animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
         transition={{ duration: 0.3 }}
         exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
-        className="navbar flex flex-col mt-16 lg:hidden absolute top-4 left-0 z-50 w-full items-center gap-10 pb-10 border-y border-solid pt-10"
+        className="bg-black bg-opacity-80 backdrop-blur-3xl flex flex-col mt-16 lg:hidden absolute top-4 left-0 z-50 w-full items-center gap-10 pb-10 border-y border-solid pt-10"
       >
         {links.map(({ label, href, ariaLabel }) => (
           <NavbarLink

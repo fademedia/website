@@ -21,7 +21,7 @@
 
 body,
 html {
-  @apply bg-zinc-900 bg-topography text-zinc-950;
+  @apply bg-zinc-900 text-zinc-950;
 }
 
 ::-webkit-scrollbar {
@@ -54,21 +54,24 @@ html {
 /* Buttons */
 
 .custom-button-colored {
-  @apply rounded-lg font-bold bg-sagegreen text-zinc-900 flex justify-center items-center hover:bg-gray-700 hover:text-white duration-500 cursor-pointer transition;
+  @apply rounded-lg font-bold bg-DodgerBlue text-zinc-300 flex justify-center items-center hover:bg-gray-700 hover:text-white duration-500 cursor-pointer transition;
 }
 
 /* Navbar */
 
 .navbar {
-  background: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 10px #121212;
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
+  background: rgba(30, 30, 30, 0.2);
+  box-shadow: 0 0 5px #121212;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.logo:hover ~ span{
-  transition: opacity 1s, transform 0.5s;
-  transform: translateX(0.2rem);
+.logo ~ span {
+  transition: opacity 0.6s, transform 0.9s;
+}
+
+.logo:hover ~ span{ 
+  transform: translateX(4.5rem);
   opacity: 100;
 } 
 

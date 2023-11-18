@@ -59,28 +59,30 @@ export const Clients = () => {
 
   return (
     <div className="marquee-section" style={{ overflow: "hidden" }}>
-      <div className="custom-block-big-title text-center mb-6">
+      <div className="custom-block-big-title text-center mb-6 mt-48">
         Our clients, not just customers
       </div>
       <div className="custom-block-title text-center mb-16 px-8 sm:px-24 md:px-48">
-      People work with us, not just for us.
+        People work with us, not just for us.
       </div>
-      <motion.div
-        className="marquee-container inline-block py-24"
-        variants={marqueeVariants}
-        initial="initial"
-        animate="animate"
-        style={{ display: "flex", gap: "1rem" }} // Set the gap between logos
-      >
-        {logos.map((logo, index) => (
-          <motion.div
-            key={index}
-            className="logo-container flex hover:filter-none filter grayscale justify-center"
-          >
-            {logo}
-          </motion.div>
-        ))}
-      </motion.div>
+      <div>
+        <motion.div
+          className="marquee-container inline-block my-36"
+          variants={marqueeVariants}
+          initial="initial"
+          animate="animate"
+          style={{ display: "flex", gap: "1rem" }} // Set the gap between logos
+        >
+          {logos.map((logo, index) => (
+            <motion.div
+              key={index}
+              className="logo-container flex hover:filter-none filter justify-center"
+            >
+              {logo}
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 };

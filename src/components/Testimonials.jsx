@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { QuoteIcon } from '../assets/icons/QuoteIcon';
+import { Overlay } from './Overlay';
 
 const FaseehAhmed = 'https://i.imgur.com/gAAWHrX.jpg';
 const AkshaySharma = 'https://i.imgur.com/FcGMIb0.jpg';
@@ -26,38 +27,39 @@ const testimonialData = [
 
 export const Testimonials = () => {
   return (
-    <section className="testimonial-section py-16">
+    <section className="testimonial-section">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-white">
+        <h2 className="text-5xl font-bold text-center py-20 text-white">
           Testimonials
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-28">
+          
           {testimonialData.map((testimonial) => (
             <motion.div
-              key={testimonial.id}
-              className="bg-stone-200 p-8 rounded-lg shadow-md text-gray-800 relative mx-5 md:mx-0"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="text-center flex justify-around sm:justify-around md:flex-col">
-                <div className="sm:w-1/4 md:w-auto md:mb-3">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-20 h-20 md:w-16 md:h-16 rounded-full mx-auto mb-2 md:mb-0 md:mt-0 md:relative"
-                    style={{ zIndex: 1 }}
-                  />
-                </div>
-                <div className="sm:w-3/4 md:w-auto">
-                  <h3 className="text-xl font-bold">{testimonial.name}</h3>
-                  <p className="text-gray-600 mb-4">{testimonial.role}</p>
-                </div>
-              </div>
-              <p className="text-gray-700 text-justify text-sm">{testimonial.text}</p>
-            </motion.div>
-          ))}
+      key={testimonial.id}
+      className="bg-zinc-200 p-8 rounded-lg text-gray-800 relative mx-5 md:mx-0"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="text-center flex justify-around sm:justify-around md:flex-col">
+        <div className="w-44 md:w-auto md:mb-3 items-center">
+          <img
+            src={testimonial.image}
+            alt={testimonial.name}
+            className="w-20 h-20 md:w-16 md:h-16 rounded-full mx-auto mb-2 md:mb-0 md:mt-0 md:relative"
+            style={{ zIndex: 1 }}
+          />
         </div>
+        <div className="sm:w-3/4 md:w-auto">
+          <h3 className="text-xl font-bold">{testimonial.name}</h3>
+          <p className="text-gray-600 mb-4">{testimonial.role}</p>
+        </div>
+      </div>
+      <p className="text-gray-700 text-justify text-sm">{testimonial.text}</p>
+    </motion.div>
+          ))}
+        </div> 
       </div>
     </section>
   );

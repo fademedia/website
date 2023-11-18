@@ -53,12 +53,12 @@ export const FAQ = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={`transition-all duration-500 ${
-              isOpen ? "rotate-[180deg]" : "rotate-[270deg]"
+              isOpen ? "rotate-[360deg]" : "rotate-[180deg]"
             }`}
           >
             <path
               d="M4.16732 12.5L10.0007 6.66667L15.834 12.5"
-              stroke="#4F46E5"
+              stroke="#000000"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
