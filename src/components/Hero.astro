@@ -1,10 +1,10 @@
 ---
 import Div from "./framer/Div.astro";
 import Span from "./framer/Span.astro";
-import { motion } from "framer-motion";
+import Lottie from "./shared/Lottie";
 ---
 
-<section class="w-screen flex justify-center items-center mb-4" id="home">
+<section class="w-screen flex flex-wrap justify-center items-center" id="home">
   <Div>
     <div
       class="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-semibold tracking-wide leading-relaxed h-screen -translate-y-5 flex justify-center items-center"
@@ -15,5 +15,12 @@ import { motion } from "framer-motion";
         digital visionaries.
       </Span>
     </div>
+  </Div>
+  <Div>
+    <Lottie
+      LottieSource={"https://lottie.host/2c63b9df-5ecb-46e1-a49b-167d1a174bdc/NewOJ2mug6.lottie"}
+      loop={true}
+      client:load
+    />
   </Div>
 </section>

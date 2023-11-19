@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.2",
+    "@dotlottie/player-component": "^2.7.2",
     "@fontsource/inter": "^5.0.15",
     "astro": "^3.2.4",
     "framer-motion": "^10.16.4",

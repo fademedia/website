@@ -11,6 +11,7 @@ module.exports = {
         extradark: "45px -40px 0 0 hsl(0, 0%, 30%)",
       },
       colors: {
+        page: "hsl(204, 8%, 23%)",
         merino: "hsl(42, 28%, 93%)",
         quillgrey: "hsl(63, 19%, 81%)",
         whiterock: "hsl(40, 33%, 89%)",
