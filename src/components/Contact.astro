@@ -147,7 +147,7 @@
           class="card h-fit max-w-6xl p-5 md:px-12 md:pb-12 w-full rounded-xl"
           id="form"
         >
-          <form id="contactForm">
+          <form id="contactForm" method="post">
             <div class="mb-4">
               <div class="mx-0 mb-1">
                 <div class="mx-0">
@@ -161,6 +161,7 @@
                     placeholder="Your name"
                     class="w-full rounded-md border border-gray-300 bg-transparent py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                     name="name"
+                    required
                   />
                   <div class="text-red-500 h-3">
                     {false && "Enter valid Name"}
@@ -177,6 +178,7 @@
                     placeholder="Your email address"
                     class="w-full rounded-md border bg-transparent py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                     name="email"
+                    required
                   />
                    <div class="text-red-500 h-3">
                     {false && "Enter valid Email Address"}
@@ -193,6 +195,7 @@
                     placeholder="Your phone number"
                     class="w-full rounded-md border border-gray-300 bg-transparent py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                     name="phone"
+                    required
                   />
                   <div class="text-red-500 h-3">
                     {false && "Enter valid Phone Number"}
@@ -210,6 +213,7 @@
                   rows={5}
                   placeholder="Write your message..."
                   class="w-full rounded-md border border-gray-300 bg-transparent py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                  required
                 ></textarea>
               </div>
             </div>

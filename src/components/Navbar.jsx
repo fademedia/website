@@ -25,7 +25,7 @@ export const Navbar = () => {
       <div className="2xl:w-[1380px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
         <a href="#home" aria-label="Home" className="flex items-center">
           <img
-            className="logo w-[3rem] h-[3rem] md:w-16 md:h-16 z-30 hover:rotate-[360deg] duration-1000"
+            className="logo w-[3rem] h-[3rem] md:w-16 md:h-16 z-30"
             src="/logo.webp"
             alt="Fade Media Logo"
           />
