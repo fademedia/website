@@ -44,7 +44,7 @@ export const Navbar = () => {
               className="custom-button-colored w-28 sm:w-40 h-8 sm:h-10 mr-0 sm:mr-4 lg:mr-4 sm:mb-0"
               href="#contact"
             >
-              Contact Us
+              Get Started
             </a>
           </div>
         </motion.div>
