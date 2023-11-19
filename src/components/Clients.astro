@@ -1,83 +1,61 @@
 ---
-import { motion } from "framer-motion";
-const logos = [
-  <img
-    src="/clients/amaauto.png"
-    alt="AMA Auto"
-    style={{ width: "80%", maxWidth: "150px" }}
-  />,
-  <img
-    src="/clients/cyborgfitnessclub.png"
-    alt="Cyborg Fitness Club"
-    style={{ width: "80%", maxWidth: "150px" }}
-  />,
-  <img
-    src="/clients/hungrywok.png"
-    alt="Hungry Wok"
-    style={{ width: "80%", maxWidth: "150px" }}
-  />,
-  <img
-    src="/clients/mas.png"
-    alt="Mas"
-    style={{ width: "80%", maxWidth: "150px" }}
-  />,
-  <img
-    src="/clients/polyfans.png"
-    alt="Poly fans"
-    style={{ width: "80%", maxWidth: "150px" }}
-  />,
-  <img
-    src="/clients/s2fimexllp.png"
-    alt="S2FIXMEX LLP"
-    style={{ width: "80%", maxWidth: "150px" }}
-  />,
-  <img
-    src="/clients/tylers.png"
-    alt="Tyler's"
-    style={{ width: "80%", maxWidth: "150px" }}
-  />,
-];
 
-const marqueeVariants = {
-  initial: {
-    x: "100%", // Initial position off-screen to the right
-  },
-  animate: {
-    x: "-100%", // Move to the left
-    transition: {
-      x: {
-        repeat: Infinity, // Repeat the animation infinitely
-        duration: 20, // Duration of one loop
-        ease: "linear", // Linear easing for a constant speed
-      },
-    },
-  },
-};
 ---
 
-<div class="marquee-section" style={{ overflow: "hidden" }}>
-  <div class="custom-block-big-title text-center mb-6">
-    Our clients, not just customers
-  </div>
-  <div class="custom-block-title text-center mb-16 px-8 sm:px-24 md:px-48">
-    People work with us, not just for us.
-  </div>
-  <motion.div
-    className="marquee-container inline-block"
-    variants={marqueeVariants}
-    initial="initial"
-    animate="animate"
-    style={{ display: "flex", gap: "1rem" }}
-  >
-    {
-      logos.map((logo, index) => (
-        <motion.div
-          key={index}
-          className="logo-container inline-block hover:filter-none filter grayscale"
+<section class="relative z-20" id="contact">
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20 z-20">
+    <div class="mb-4">
+      <div class="mb-6 max-w-7xl text-center md:mx-auto md:mb-12">
+        <p
+          class="text-base font-semibold uppercase tracking-wide text-blue-600"
         >
-          {logo}
-        </motion.div>
-      ))
-    }
-  </motion.div>
-</div>
+          Collaborators
+        </p>
+        <h2
+          class="font-heading mb-2 font-bold tracking-tight text-white text-3xl sm:text-5xl"
+        >
+          Successful Collaborations
+        </h2>
+        <p class="mx-auto mt-2 max-w-7xl text-xl text-white">
+          Discover the success stories of our fruitful collaborations with a
+          variety of businesses. From startups to established enterprises,
+          explore the list below to see the diverse range of collaborators we've
+          worked with.
+        </p>
+      </div>
+    </div>
+    <div
+      class="relative flex min-h-screen flex-col justify-center overflow-hidden py-2 sm:py-6"
+    >
+      <div class="pointer-events-none relative flex gap-4 overflow-hidden">
+        <div
+          class="flex min-w-full text-4xl shrink-0 animate-marquee items-center justify-around gap-10"
+        >
+          <p class="text-center text-white">Tyler's Traven</p>
+          <p class="text-center text-white">S2FlMEX LLP</p>
+          <p class="text-center text-white">Pony Fans</p>
+          <p class="text-center text-white">MAS</p>
+          <p class="text-center text-white">Hungry Wok</p>
+          <p class="text-center text-white">Environ</p>
+          <p class="text-center text-white">Cyborg Fitness Club</p>
+          <p class="text-center text-white">Bright Caterers</p>
+          <p class="text-center text-white">AMA AUTO</p>
+        </div>
+        <div
+          aria-hidden="true"
+          class="text-4xl flex min-w-full shrink-0 animate-marquee items-center justify-around gap-10"
+        >
+          <p class="text-center text-white">Tyler's Traven</p>
+          <p class="text-center text-white">S2FlMEX LLP</p>
+          <p class="text-center text-white">Pony Fans</p>
+          <p class="text-center text-white">MAS</p>
+          <p class="text-center text-white">Hungry Wok</p>
+          <p class="text-center text-white">Environ</p>
+          <p class="text-center text-white">Cyborg Fitness Club</p>
+          <p class="text-center text-white">Bright Caterers</p>
+          <p class="text-center text-white">AMA AUTO</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
