@@ -55,7 +55,7 @@ html {
 /* Buttons */
 
 .custom-button-colored {
-  @apply rounded-md font-bold bg-DodgerBlue text-zinc-300 flex justify-center items-center hover:bg-blue-700 duration-500 cursor-pointer transition;
+  @apply rounded-md font-bold bg-DodgerBlue text-zinc-100 flex justify-center items-center hover:bg-blue-700 duration-500 cursor-pointer transition;
 }
 
 /* Navbar */
@@ -87,7 +87,12 @@ html {
 }
 }
 
-
+.contact {
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 0 5px #121212;
+  backdrop-filter: blur(0.2rem);
+  -webkit-backdrop-filter: blur(10px);
+}
 
 .navbar-link {
   @apply text-zinc-200 text-xl leading-6 mx-4 cursor-pointer font-medium hover:scale-105 transition-transform duration-300 pt-2;
