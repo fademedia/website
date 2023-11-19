@@ -55,26 +55,39 @@ html {
 /* Buttons */
 
 .custom-button-colored {
-  @apply rounded-lg font-bold bg-DodgerBlue text-zinc-300 flex justify-center items-center hover:bg-gray-700 hover:text-white duration-500 cursor-pointer transition;
+  @apply rounded-md font-bold bg-DodgerBlue text-zinc-300 flex justify-center items-center hover:bg-violet-700 duration-500 cursor-pointer transition;
 }
 
 /* Navbar */
 
 .navbar {
-  background: rgba(30, 30, 30, 0.2);
+  background: rgba(30, 30, 30, 0);
   box-shadow: 0 0 5px #121212;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0.2rem);
   -webkit-backdrop-filter: blur(10px);
 }
+
 
 .logo ~ span {
   transition: opacity 0.6s, transform 0.9s;
 }
 
 .logo:hover ~ span{ 
-  transform: translateX(4.5rem);
+  transform: translateX(3.5rem);
   opacity: 100;
 } 
+
+@media (max-width:640px) {
+  .logo:hover ~ span{ 
+  transform: translateX(2rem);
+  opacity: 100;
+}
+.logo ~ span {
+  transition: opacity 0.3s, transform 0.6s;
+}
+}
+
+
 
 .navbar-link {
   @apply text-zinc-200 text-xl leading-6 mx-4 cursor-pointer font-medium hover:scale-105 transition-transform duration-300 pt-2;
