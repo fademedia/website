@@ -29,9 +29,9 @@ function Services() {
   const servicesRows = chunkArray(Servicesdata, 5);
 
   return (
-      <div className="flex min-h-screen flex-col justify-around overflow-x-hidden py-6 sm:py-12 md:mx-2">
+      <div className="flex flex-col justify-around overflow-x-hidden py-6 sm:py-12 md:mx-2">
         <h2 className="text-5xl font-bold text-center">Our Services</h2>
-        <div>
+        <div className="mt-44">
           {servicesRows.map((row, rowIndex) => (
             <div
               key={rowIndex}
