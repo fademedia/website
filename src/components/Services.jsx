@@ -29,7 +29,7 @@ function Services() {
   const servicesRows = chunkArray(Servicesdata, 5);
 
   return (
-      <div className="flex flex-col justify-around overflow-x-hidden py-6 sm:py-16 md:mx-2">
+      <div className="flex flex-col justify-around overflow-x-hidden py-6 sm:py-20 md:mx-2">
         <h2 className="text-5xl font-bold text-center">Our Services</h2>
         <div className="mt-44">
           {servicesRows.map((row, rowIndex) => (
