@@ -45,11 +45,15 @@ const FAQData = [
         <div class="mb-11 flex flex-wrap -m-1">
           {
             FAQData.map((item, index) => (
-              <div class="w-full p-1">
+            <div class="w-full px-1">
+                <hr class="my-6 border-gray-200" />
                 <FAQBox {...item} defaultOpen={index === 0} client:load />
-              </div>
+            </div>
             ))
           }
+          <div class="w-full px-1">
+                <hr class="my-6 border-gray-200" />
+          </div>
         </div>
       </div>
     </div>
