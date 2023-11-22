@@ -1,5 +1,5 @@
 /* Typography */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 .custom-block-title {
   @apply text-zinc-200 text-3xl font-bold tracking-normal;
@@ -67,28 +67,27 @@ html {
   -webkit-backdrop-filter: blur(10px);
 }
 
-
 .logo ~ span {
   transition: opacity 0.6s, transform 0.9s;
 }
 
-.logo:hover ~ span{ 
+.logo:hover ~ span {
   transform: translateX(3.5rem);
   opacity: 100;
-} 
+}
 
-@media (max-width:640px) {
-  .logo:hover ~ span{ 
-  transform: translateX(2rem);
-  opacity: 100;
-}
-.logo ~ span {
-  transition: opacity 0.3s, transform 0.6s;
-}
+@media (max-width: 640px) {
+  .logo:hover ~ span {
+    transform: translateX(2rem);
+    opacity: 100;
+  }
+  .logo ~ span {
+    transition: opacity 0.3s, transform 0.6s;
+  }
 }
 
 .contact {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 0 5px #121212;
   backdrop-filter: blur(0.2rem);
   -webkit-backdrop-filter: blur(10px);
@@ -96,6 +95,88 @@ html {
 
 .navbar-link {
   @apply text-zinc-200 text-xl leading-6 mx-4 cursor-pointer font-medium hover:scale-105 transition-transform duration-300 pt-2;
+}
+
+.marquee-left {
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 2s linear infinite;
+  -webkit-animation: scroll-left 2s linear infinite;
+  animation: scroll-left 20s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-right {
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 2s linear infinite;
+  -webkit-animation: scroll-left 2s linear infinite;
+  animation: scroll-right 20s linear infinite;
+}
+
+@-moz-keyframes scroll-right {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-right {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
 }
 
 /* .testimonials {
@@ -111,4 +192,3 @@ html {
 @font-face {
   font-display: var(--fontsource-Inter-font-display, optional);
 }
-

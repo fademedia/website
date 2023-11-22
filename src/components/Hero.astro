@@ -4,7 +4,7 @@ import Span from "./framer/Span.astro";
 import Lottie from "./shared/Lottie";
 ---
 
-<section class="w-screen flex flex-wrap justify-center items-center" id="home">
+<!-- <section class="w-screen flex flex-wrap justify-center items-center" id="home">
   <Div>
     <div
       class="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-semibold tracking-wide leading-relaxed h-[720px] -translate-y-5 flex justify-center items-center"
@@ -22,5 +22,40 @@ import Lottie from "./shared/Lottie";
       loop={true}
       client:load
     />
+  </Div>
+</section> -->
+<section class="w-screen flex flex-wrap justify-around items-center min-h-[680px]" id="home">
+  <div
+    class="w-full md:w-[600px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:py-32 text-center"
+  >
+    <Div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.05 }}
+    >
+      <div
+        class="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-zinc-900 px-8 sm:px-8 md:px-20 lg:px-4 mt-28"
+      >
+        <Span
+        classes="md:whitespace-nowrap bg-gradient-to-t from-purple-200 via-purple-400 to-purple-800 text-transparent bg-clip-text tracking-wide sm:leading-loose text-center font-Pacifico"
+      >
+        digital visionaries.
+      </Span>
+      </div>
+    </Div>
+    <div class="relative w-screen flex justify-center"></div>
+  </div>
+  <Div
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+  >
+    <div class="mt-16 flex items-center">
+      <Lottie
+        LottieSource={"https://lottie.host/2c63b9df-5ecb-46e1-a49b-167d1a174bdc/NewOJ2mug6.lottie"}
+        loop={true}
+        client:load
+      />
+    </div>
   </Div>
 </section>
