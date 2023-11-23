@@ -31,7 +31,7 @@ function Services() {
   return (
       <div className="flex flex-col justify-around overflow-x-hidden py-6 sm:py-20 md:mx-2">
         <h2 className="text-5xl font-bold text-center">Our Services</h2>
-        <div className="mt-44">
+        <div className="mt-44 font-bold">
           {servicesRows.map((row, rowIndex) => (
             <div
               key={rowIndex}
