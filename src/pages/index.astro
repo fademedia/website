@@ -7,12 +7,13 @@ import Clients from "../components/Clients.astro";
 import FAQ from "../components/FAQ.astro";
 import Contact from "../components/Contact.astro";
 import "../styles/Theme.css";
-import Services from "../components/Services.jsx";
+import Services from "../components/Services.astro";
+import About from "@/components/About.astro";
 ---
 
 <Layout title="Fade Media">
   <Hero />
-  <!-- <Features1 client:load /> -->
+  <About />
   <Services />
   <Clients />
   <Testimonials />

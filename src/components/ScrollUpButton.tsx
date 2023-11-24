@@ -1,22 +1,11 @@
-import React, { useEffect, useState } from "react";
+// ScrollUpButton.tsx
+import React from "react";
+import useScrollVisibility from "../hooks/useScrollVisibility";
 
 interface ScrollUpButtonProps {}
 
 const ScrollUpButton: React.FC<ScrollUpButtonProps> = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = document.documentElement.scrollTop;
-      setIsVisible(scrolled > 300);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const isVisible = useScrollVisibility();
 
   const scrollToTop = () => {
     window.scrollTo({

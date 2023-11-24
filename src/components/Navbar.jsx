@@ -1,20 +1,9 @@
-import { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
+import useScrollHide from "../hooks/useScrollHide";
 
 export const Navbar = () => {
-  const [isHidden, setIsHidden] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      setIsHidden(currentScrollPos > prevScrollPos && currentScrollPos > 0);
-      setPrevScrollPos(currentScrollPos);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollPos]);
+  const isHidden = useScrollHide();
 
   return (
     <nav
