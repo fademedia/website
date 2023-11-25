@@ -21,12 +21,12 @@
 }
 
 .radial-gradient {
-  background: radial-gradient(100% 100% at 50% 65.82%, #6E6F64 0%, #7E8381 0%, #303C47 28.29%, #0D1828 51.84%, #000000 100%);
+  background: radial-gradient(100% 50% at 50% 50.82%, #6E6F64 0%, #7E8381 0%, #303C47 28.29%, #0D1828 51.84%, #060C14 100%);
 }
 
 body,
 html {
-  @apply bg-black text-white;
+  @apply bg-cyanBlue text-white;
 }
 
 ::-webkit-scrollbar {

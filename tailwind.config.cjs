@@ -32,6 +32,8 @@ module.exports = {
         sagegreen: "hsl(85, 10%, 53%)",
         lisbonbrown: "hsl(30, 22%, 21%)",
         customPrimary: "hsl(235, 60%, 65%)",
+        jacarta: "hsl(245,17%,29%)",
+        cyanBlue: "hsl(214,54%,5%)",
         DodgerBlue: "	hsl(211, 100%, 50%)",
       },
       fontFamily: {
