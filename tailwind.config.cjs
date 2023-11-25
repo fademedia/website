@@ -4,15 +4,15 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        marquee: "marquee 50s linear infinite"
+        marquee: "marquee 50s linear infinite",
       },
       keyframes: {
         marquee: {
           from: {
-            transform: 'translateX(0)',
+            transform: "translateX(0)",
           },
           to: {
-            transform: 'translateX(calc(-100% - 2.5rem))',
+            transform: "translateX(calc(-100% - 2.5rem))",
           },
         },
       },
@@ -36,7 +36,10 @@ module.exports = {
       },
       fontFamily: {
         Inter: "Inter",
-        Pacifico: ["Pacifico", "cursive"],
+        AbrilFatface: ["Abril Fatface", "serif"],
+        OpenSans: ["Open Sans", "sans-serif"],
+        PoiretOne: ["Poiret One", "sans-serif"],
+        Nunito:["Nunito", "sans-serif"]
       },
       screens: {
         "2xl": "1536px",

@@ -1,5 +1,5 @@
 /* Typography */
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito&family=Open+Sans&family=Poiret+One&display=swap');
 
 .custom-block-title {
   @apply text-zinc-200 text-3xl font-bold tracking-normal;
@@ -20,9 +20,13 @@
   @apply text-zinc-600 text-base;
 }
 
+.radial-gradient {
+  background: radial-gradient(100% 100% at 50% 65.82%, #6E6F64 0%, #7E8381 0%, #303C47 28.29%, #0D1828 51.84%, #000000 100%);
+}
+
 body,
 html {
-  @apply bg-page text-white;
+  @apply bg-black text-white;
 }
 
 ::-webkit-scrollbar {
