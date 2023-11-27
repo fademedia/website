@@ -17,7 +17,7 @@ const testimonialData = [
     id: 2,
     name: "Faseeh Ahmed",
     role: "Managing Director at S2FIMEX LLP | Data Engineer at Dell EMC",
-    text: "It’s one thing that drives any industry: Trust. Fade Media is that company that builds trust. It builds trust because of the integrity they showcase. The young energy and zeal. The commitment and the passion to showcase the work. It’s a brand they are building. Ethan and Aaron at the helm, Mission Impossible feels underrated. Their support staff standing tall behind them and ensuring that a vision is brought to life, it’s just magic. If we say jump, they question “how high?”. We as a company if ever want digital marketing, Fade is where we will sign up.",
+    text: "Fade Media epitomizes trust in the industry, driven by their integrity, youthful energy, and unwavering commitment. Under Ethan and Aaron's leadership, it feels like Mission Impossible is underrated. With a steadfast support staff, they effortlessly bring visions to life. For digital marketing, Fade is our go-to choice.",
     image: FaseehAhmed,
   },
 ];
@@ -25,34 +25,51 @@ const testimonialData = [
 
 <section class="testimonial-section">
   <div class="max-w-4xl mx-auto">
-    <h2 class="text-5xl font-bold text-center py-20 text-white">
-      Testimonials
+    <h2 class="text-5xl text-center py-20 text-whiterock font-AbrilFatface">
+      Don’t just take our word for it!
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-28">
       {
         testimonialData.map((testimonial) => (
           <Div
             key={testimonial.id}
-            classes="bg-zinc-200 p-8 rounded-lg text-gray-800 relative mx-5 md:mx-0 h-full"
+            classes="bg-cinder p-8 rounded-3xl border border-sagegreen text-gray-800 relative mx-5 md:mx-0 h-full flex flex-col justify-between"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div class="text-center flex justify-around sm:justify-around md:flex-col">
-              <div class="w-44 md:w-auto md:mb-3 items-center">
+            <svg
+              class="w-8 h-8"
+              viewBox="0 0 78 67"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M74.0002 0H49.6811C47.4732 0 45.6812 1.74381 45.6812 3.89244V27.5585C45.6812 29.7072 47.4732 31.4509 49.6811 31.4509H61.3206C61.1686 37.6478 59.6887 42.6067 56.8888 46.3356C54.6809 49.2783 51.3371 51.715 46.8652 53.6379C44.8093 54.5176 43.9213 56.8842 44.8813 58.8616L47.7612 64.7781C48.6891 66.6775 50.985 67.5106 52.969 66.6775C58.2647 64.4511 62.7367 61.6329 66.3844 58.2076C70.8324 54.0271 73.8802 49.3095 75.5281 44.0469C77.1761 38.7843 78 31.6066 78 22.4983V3.89244C78 1.74389 76.208 0 74.0002 0ZM8.48265 66.662C13.7144 64.4433 18.1623 61.6252 21.8341 58.2076C26.322 54.0271 29.3859 49.325 31.0338 44.1014C32.6817 38.8777 33.5056 31.6767 33.5056 22.4983V3.89244C33.5056 1.74381 31.7138 0 29.5058 0H5.18669C2.97877 0 1.18684 1.74381 1.18684 3.89244V27.5585C1.18684 29.7072 2.97877 31.4509 5.18669 31.4509H16.8262C16.6743 37.6478 15.1943 42.6067 12.3944 46.3356C10.1865 49.2783 6.84263 51.715 2.3708 53.6379C0.314876 54.5176 -0.57309 56.8842 0.386873 58.8616L3.25876 64.7625C4.18681 66.662 6.49872 67.5028 8.48265 66.662Z"
+                fill="#65617D"
+              />
+            </svg>
+            <br>
+            <p class="text-white font-Nunito text-base">{testimonial.text}</p>
+            <br />
+            <div class="text-left flex flex-col sm:flex-row items-center justify-between md:justify-start gap-2">
+              <div class="w-24">
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}
-                  class="w-20 h-20 md:w-16 md:h-16 rounded-full mx-auto mb-2 md:mb-0 md:mt-0 md:relative"
+                  class="w-20 h-20 md:w-16 md:h-16 rounded-full md:mb-0 md:mt-0 md:relative"
                   style={{ zIndex: 1 }}
                 />
               </div>
-              <div class="sm:w-3/4 md:w-auto">
-                <h3 class="text-xl font-bold">{testimonial.name}</h3>
-                <p class="text-gray-600 mb-4">{testimonial.role}</p>
+              <div class="">
+                <h3 class="font-Nunito text-center sm:text-left text-lg text-sagegreen">
+                  {testimonial.name}
+                </h3>
+                <p class="font-Nunito text-center sm:text-left text-base text-mountainmist">
+                  {testimonial.role}
+                </p>
               </div>
             </div>
-            <p class="text-gray-700 text-justify text-sm">{testimonial.text}</p>
           </Div>
         ))
       }

@@ -33,7 +33,9 @@ module.exports = {
         lisbonbrown: "hsl(30, 22%, 21%)",
         customPrimary: "hsl(235, 60%, 65%)",
         jacarta: "hsl(245,17%,29%)",
-        cyanBlue: "hsl(214,54%,5%)",
+        cyanblue: "hsl(214,54%,5%)",
+        cinder: "hsl(214, 39%, 7%)",
+        mountainmist: "hsl(252, 2%, 59%)",
         DodgerBlue: "	hsl(211, 100%, 50%)",
       },
       fontFamily: {
@@ -41,7 +43,7 @@ module.exports = {
         AbrilFatface: ["Abril Fatface", "serif"],
         OpenSans: ["Open Sans", "sans-serif"],
         PoiretOne: ["Poiret One", "sans-serif"],
-        Nunito:["Nunito", "sans-serif"]
+        Nunito: ["Nunito", "sans-serif"],
       },
       screens: {
         "2xl": "1536px",

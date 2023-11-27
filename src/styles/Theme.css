@@ -26,7 +26,7 @@
 
 body,
 html {
-  @apply bg-cyanBlue text-white;
+  @apply bg-cyanblue text-white;
 }
 
 ::-webkit-scrollbar {
