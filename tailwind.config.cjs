@@ -17,11 +17,21 @@ module.exports = {
         },
       },
       backgroundImage: {
-        topography: "url('/topography.svg')",
+        radialgradient:
+          "radial-gradient(100% 100% at 50% 92.82%, #000000 0%, #000000 0.01%, #030105 20.42%, #030105 50.42%, #1B0E14 63.12%, #0F0718 73.02%, #000000 100%)",
+        lineargradientabout:
+          "linear-gradient(180deg, rgba(1, 2, 5, 0) 0%, #17081E 85.42%)",
+        lineargradientservice:
+          "linear-gradient(180deg, #16081D 0%, #0F0615 27.71%, #030105 57.4%)",
+        clientgradient: "linear-gradient(180deg, #030105 55.97%, #0C0514 100%)",
+        testimonialgradient:
+          "linear-gradient(110.52deg, #0D0415 20.67%, #231315 47.87%, #1A0E13 64.16%, #0B0310 86.77%)",
+        faqgradient: "linear-gradient(180deg, #0D0515 0%, #030105 100%)",
       },
       boxShadow: {
         dark: "35px -30px 0 0 hsl(0, 0%, 45%)",
         extradark: "45px -40px 0 0 hsl(0, 0%, 30%)",
+        testimonial: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
       },
       colors: {
         page: "hsl(204, 8%, 23%)",
@@ -37,9 +47,12 @@ module.exports = {
         cinder: "hsl(214, 39%, 7%)",
         mountainmist: "hsl(252, 2%, 59%)",
         DodgerBlue: "	hsl(211, 100%, 50%)",
+        darkpastelblue: "hsl(266, 52%, 64%)",
       },
       fontFamily: {
         Inter: "Inter",
+        Montserrat: "Montserrat",
+        MerriweatherSans: "Merriweather Sans",
         AbrilFatface: ["Abril Fatface", "serif"],
         OpenSans: ["Open Sans", "sans-serif"],
         PoiretOne: ["Poiret One", "sans-serif"],

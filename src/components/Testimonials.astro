@@ -23,17 +23,17 @@ const testimonialData = [
 ];
 ---
 
-<section class="testimonial-section">
+<section class="testimonial-section bg-testimonialgradient">
   <div class="max-w-4xl mx-auto">
-    <h2 class="text-5xl text-center py-20 text-whiterock font-AbrilFatface">
+    <h2 class="text-5xl text-center py-20 font-MerriweatherSans font-bold">
       Don’t just take our word for it!
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-28">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-28">
       {
         testimonialData.map((testimonial) => (
           <Div
             key={testimonial.id}
-            classes="bg-cinder p-8 rounded-3xl border border-sagegreen text-gray-800 relative mx-5 md:mx-0 h-full flex flex-col justify-between"
+            classes="p-8 rounded-3xl glassmorphism-testimonials border border-darkpastelblue relative mx-5 md:mx-0 h-full flex flex-col justify-between"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -62,7 +62,7 @@ const testimonialData = [
                 />
               </div>
               <div class="">
-                <h3 class="font-Nunito text-center sm:text-left text-lg text-sagegreen">
+                <h3 class="font-Nunito text-center sm:text-left text-lg">
                   {testimonial.name}
                 </h3>
                 <p class="font-Nunito text-center sm:text-left text-base text-mountainmist">
