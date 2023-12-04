@@ -27,6 +27,8 @@ module.exports = {
         testimonialgradient:
           "linear-gradient(110.52deg, #0D0415 20.67%, #231315 47.87%, #1A0E13 64.16%, #0B0310 86.77%)",
         faqgradient: "linear-gradient(180deg, #0D0515 0%, #030105 100%)",
+        footergradient:
+          "linear-gradient(94deg, #0C0415 1.81%, #211214 50.59%, #0C0415 99.66%)",
       },
       boxShadow: {
         dark: "35px -30px 0 0 hsl(0, 0%, 45%)",

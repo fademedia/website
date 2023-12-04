@@ -1,29 +1,91 @@
 ---
-import { chunkArray } from "../lib/chunk";
+// import { chunkArray } from "../lib/chunk";
+import { Icon } from "astro-icon";
 
-const Servicesdata = [
-  "Social Media Marketing",
-  "Content Marketing",
-  "Video Marketing",
-  "Influencer Marketing",
-  "Search Engine Optimization (SEO)",
-  "Local SEO",
-  "Chatbots and AI Assistants",
-  "Email Marketing",
-  "Data Analytics and Marketing Automation",
-  "E-commerce Marketing",
-  "Social Commerce",
-  "Photography",
-  "Videography",
-  "Professional Copywriting",
-  "Web Development",
+const servicesData = [
+  {
+    image: "webdev",
+    title: "Web Development",
+    content:
+      "Elevate your online presence with our dynamic web development service, combining creativity and functionality for a standout digital experience.",
+  },
+  {
+    image: "contentmarketing",
+    title: "Content Marketing",
+    content: "Fuel your brand's narrative with our strategic content marketing, seamlessly blending creativity and impact for an engaging online presence."
+  },
+  {
+    image: "videomarketing",
+    title: "Video Marketing",
+    content: "Ready to take your brand to the next level? Let's craft compelling visual stories that resonate with your audience and leave a lasting impact."
+  },
+  {
+    image: "seo",
+    title: "SEO",
+    content: "Struggling to top search results? Let us be your SEO superhero! Our experts optimize your site, skyrocketing visibility and ensuring online success."
+  },
+  {
+    image: "ai",
+    title: "AI Assistants",
+    content: "Revolutionize work and communication with our Chatbots and AI Assistants. Seamlessly integrated, these AI helpers simplify your daily routine, making life easier."
+  },
+  {
+    image: "email",
+    title: "Email Marketing",
+    content: "Elevate your brand with strategic email marketing. Seamlessly blending creativity and impact, we ensure an engaging online presence that captivates your audience."
+  },
+  {
+    image: "analytics",
+    title: "Analytics & Marketing Automation",
+    content: "Refine decisions with precise data analytics for a successful, data-driven approach to propel your business."
+  },
+  {
+    image: "e-commerce",
+    title: "E-commerce Marketing",
+    content: "Boost sales with strategic eCommerce marketing. Elevate your brand for online success and increased conversions."
+  },
+  {
+    image: "social-commerce",
+    title: "Social Commerce",
+    content: "Boost sales and brand on social platforms. Maximize engagement with our social commerce expertise for unparalleled success."
+  },
+  {
+    image: "local-seo",
+    title: "Local SEO",
+    content: "Optimize local presence with our SEO expertise. Boost visibility and engagement for unparalleled success in local search rankings."
+  },
+  {
+    image: "social-media",
+    title: "Social Media Marketing",
+    content: "Elevate sales through strategic social media marketing. Boost your brand for online triumph and heightened conversions."
+  },
+  {
+    image: "copyrighting",
+    title: "Professional Copyrighting",
+    content: "Ignite online triumph! Propel your brand and boost conversions with expert copywriting in social media strategies."
+  },
+  {
+    image: "influencer",
+    title: "Influencer Marketing",
+    content: "Amplify influence with our dynamic influencer marketing. Blend creativity and impact for a standout digital experience in elevating your online presence."
+  },
+  {
+    image: "photography",
+    title: "Photography",
+    content: "Level up your online game with professional photography! Mix creativity and precision for visuals that pop and leave a mark."
+  },
+  {
+    image: "videography",
+    title: "Videography",
+    content: "Elevate your online charisma with stellar videography! Blend creativity and expertise for videos that impress and bring smiles."
+  }
 ];
 
 // Chunk the Servicesdata into rows of 3
-const servicesRows = chunkArray(Servicesdata, 5);
+//const servicesRows = chunkArray(Servicesdata, 5);
 ---
 
-<div
+<!-- <div
   class="flex flex-col justify-around overflow-x-hidden md:mx-2 bg-lineargradientservice"
 >
   <h2 class="text-6xl text-center font-MerriweatherSans font-bold">How do we help?</h2>
@@ -104,4 +166,31 @@ const servicesRows = chunkArray(Servicesdata, 5);
       ))
     }
   </div>
-</div>
+</div> -->
+<section class="bg-lineargradientservice font-MerriweatherSans">
+  <h1 class="font-MerriweatherSans text-6xl font-bold text-center">How do we help?</h1>
+  <br />
+  <br />
+  <div class="w-full flex justify-center">
+    <p class="font-Montserrat text-center w-3/4">
+      Whether it’s web development or photography, copyrighting or analytics,
+      we’ve got you covered! Explore our services tailored to meet your needs
+      and let's enhance your digital strategy together.
+    </p>
+  </div>
+  <br />
+  <br />
+  <div class="flex justify-center">
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5 mb-40">
+      { servicesData.map((item) => (<div
+        class="w-60 p-5 rounded-2xl bg-gradient-to-b from-[#1F1114] to-[#0C0415] from-0% to-100%"
+      >
+        <Icon name={item.image} class="w-8 h-8 sm:w-9 sm:h-9"/> 
+        <h2 class="font-Nunito text-xl leading-normal font-medium">{item.title}</h2>
+        <p class="text-sm font-Nunito opacity-75">
+          {item.content}
+        </p>
+      </div>)) }
+    </div>
+  </div>
+</section>

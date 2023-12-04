@@ -1,5 +1,13 @@
 ---
-
+const clients = [
+  { client: "amaauto", logo: "/clients/amaauto.png" },
+  { client: "cyborg", logo: "/clients/cyborgfitnessclub.png" },
+  { client: "s2fimex", logo: "/clients/s2fimexllp.png" },
+  { client: "hungrywok", logo: "/clients/hungrywok.png" },
+  { client: "ponyfans", logo: "/clients/ponyfans.png" },
+  { client: "mas", logo: "/clients/mas.png" },
+  { client: "tylers", logo: "/clients/tylers-logo.png" },
+];
 ---
 
 <section class="relative z-20 bg-clientgradient" id="contact">
@@ -13,37 +21,19 @@
         </h2>
       </div>
     </div>
-    <div
-      class="relative flex flex-col justify-center overflow-hidden py-2 sm:py-6"
-    >
-      <div class="pointer-events-none relative flex gap-4 overflow-hidden">
-        <div
-          class="flex min-w-full text-4xl shrink-0 animate-marquee items-center justify-around gap-10"
-        >
-          <p class="text-center text-white">Tyler's Traven</p>
-          <p class="text-center text-white">S2FlMEX LLP</p>
-          <p class="text-center text-white">Pony Fans</p>
-          <p class="text-center text-white">MAS</p>
-          <p class="text-center text-white">Hungry Wok</p>
-          <p class="text-center text-white">Environ</p>
-          <p class="text-center text-white">Cyborg Fitness Club</p>
-          <p class="text-center text-white">Bright Caterers</p>
-          <p class="text-center text-white">AMA AUTO</p>
-        </div>
-        <div
-          aria-hidden="true"
-          class="text-4xl flex min-w-full shrink-0 animate-marquee items-center justify-around gap-10"
-        >
-          <p class="text-center text-white">Tyler's Traven</p>
-          <p class="text-center text-white">S2FlMEX LLP</p>
-          <p class="text-center text-white">Pony Fans</p>
-          <p class="text-center text-white">MAS</p>
-          <p class="text-center text-white">Hungry Wok</p>
-          <p class="text-center text-white">Environ</p>
-          <p class="text-center text-white">Cyborg Fitness Club</p>
-          <p class="text-center text-white">Bright Caterers</p>
-          <p class="text-center text-white">AMA AUTO</p>
-        </div>
+    <div class="flex justify-center">
+      <div class="flex gap-10 flex-wrap justify-center w-3/4">
+        {
+          clients.map((item) => (
+            <div class="bg-white px-8 py-1 rounded-xl">
+              <img
+                src={item.logo}
+                class="w-24 h-24 grayscale"
+                alt={item.client}
+              />
+            </div>
+          ))
+        }
       </div>
     </div>
   </div>

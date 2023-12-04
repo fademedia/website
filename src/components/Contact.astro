@@ -1,233 +1,155 @@
 ---
-
+import { Image } from "astro:assets";
+import Logo from "../assets/logo.webp";
+import Icon from "astro-icon";
 ---
 
-<section class="relative z-20" id="contact">
-  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20 z-20">
-    <div class="mb-4">
-      <div
-        class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12"
-      >
-        <p
-          class="text-base font-semibold uppercase tracking-wide text-blue-600"
+<footer class="bg-footergradient font-Montserrat py-20">
+  <div class="flex justify-around flex-wrap">
+    <div class="w-full xl:w-1/5">
+      <Image src={Logo} class="h-20 w-20" alt="Fade Media" />
+      <div class="flex items-center gap-5 my-10">
+        <svg
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          Contact
-        </p>
-        <h2
-          class="font-heading mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl"
+          <path
+            d="M12 6H12.01M9 20L3 17V4L5 5M9 20L15 17M9 20V14M15 17L21 20V7L19 6M15 17V14M15 6.2C15 7.96731 13.5 9.4 12 11C10.5 9.4 9 7.96731 9 6.2C9 4.43269 10.3431 3 12 3C13.6569 3 15 4.43269 15 6.2Z"
+            stroke="#9d74d3"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <div>
+          <p>Kankanady Road, Colaco Court</p>
+          <p>Mangaluru, Karnataka, IN</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-5 my-10">
+        <svg
+          fill="#9d74d3"
+          class="w-8 h-8"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 484.849 484.849"
+          xml:space="preserve"
         >
-          Get in Touch
-        </h2>
-        <p
-          class="mx-auto mt-4 max-w-3xl text-xl text-white"
+          <g>
+            <path
+              d="M262.797,274.552c30.206,30.206,63.252,49.446,81.428,47.771c13.579-1.252,30.7-19.862,30.7-19.862l-38.945-38.944
+		l-15.532,15.532L258.3,216.901l15.532-15.532l-38.945-38.944c0,0-18.611,17.12-19.862,30.699
+		C213.351,211.3,232.59,244.345,262.797,274.552z"
+            ></path>
+            <path
+              d="M49.924,0v113.712h-22.5v30h22.5v83.712h-25v30h25v83.712h-25v30h25v113.712h410V0H49.924z M79.924,371.136h25v-30h-25
+		v-83.712h25v-30h-25v-83.712h25v-30h-25V30h50v424.849h-50V371.136z M429.924,454.849h-270V30h270V454.849z"
+            ></path>
+          </g>
+        </svg>
+        <div>
+          <p>+91 88611 75448</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-5 my-10">
+        <svg
+          class="w-8 h-8"
+          viewBox="0 0 38 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          Want to Contact us? Choose an option below and well be happy to show
-          you how we can transform companys web experience.
-        </p>
+          <path
+            d="M37.5 3.75C37.5 1.6875 35.8125 0 33.75 0H3.75C1.6875 0 0 1.6875 0 3.75V26.25C0 28.3125 1.6875 30 3.75 30H33.75C35.8125 30 37.5 28.3125 37.5 26.25V3.75ZM33.75 3.75L18.75 13.125L3.75 3.75H33.75ZM33.75 26.25H3.75V7.5L18.75 16.875L33.75 7.5V26.25Z"
+            fill="#9D74D3"></path>
+        </svg>
+
+        <div>
+          <p>contact@fademedia.in</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-5 my-10">
+        <svg
+          class="h-8 w-8"
+          viewBox="0 0 38 38"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.75 33.75C22.7282 33.75 26.5436 32.1696 29.3566 29.3566C32.1696 26.5436 33.75 22.7282 33.75 18.75C33.75 14.7718 32.1696 10.9564 29.3566 8.1434C26.5436 5.33035 22.7282 3.75 18.75 3.75C14.7718 3.75 10.9564 5.33035 8.1434 8.1434C5.33035 10.9564 3.75 14.7718 3.75 18.75C3.75 22.7282 5.33035 26.5436 8.1434 29.3566C10.9564 32.1696 14.7718 33.75 18.75 33.75ZM18.75 0C21.2123 0 23.6505 0.484983 25.9253 1.42726C28.2002 2.36953 30.2672 3.75065 32.0083 5.49175C33.7493 7.23285 35.1305 9.29983 36.0727 11.5747C37.015 13.8495 37.5 16.2877 37.5 18.75C37.5 23.7228 35.5246 28.4919 32.0083 32.0083C28.4919 35.5246 23.7228 37.5 18.75 37.5C8.38125 37.5 0 29.0625 0 18.75C0 13.7772 1.97544 9.00805 5.49175 5.49175C9.00805 1.97544 13.7772 0 18.75 0ZM19.6875 9.375V19.2188L28.125 24.225L26.7188 26.5312L16.875 20.625V9.375H19.6875Z"
+            fill="#9D74D3"></path>
+        </svg>
+        <div>
+          <p>Working Hours</p>
+          <p>Mon - Fri : 8 AM - 5 PM</p>
+          <p>Sat - Sun : 8 AM - 12 PM</p>
+        </div>
+      </div>
+      <div class="inline-flex gap-4">
+        <a href="#">{(<Icon name="instagram-icon" class="w-10 h-10" />)}</a>
+        <a href="#">{(<Icon name="linkedin-icon" class="w-10 h-10" />)}</a>
+        <a href="#">{(<Icon name="instagram-icon" class="w-10 h-10" />)}</a>
+        <a href="#">{(<Icon name="x-icon" class="w-10 h-10" />)}</a>
       </div>
     </div>
-    <div class="flex items-stretch justify-center">
-      <div class="grid md:grid-cols-2">
-        <div class="h-full pr-6 w-full">
-          <p class="mt-3 mb-8 text-lg text-white">
-            Elevate your digital presence with us! Whether you're a startup
-            building your brand or an established business seeking a digital
-            facelift, we have the expertise and passion to make it a reality.
-          </p>
-          <ul class="mb-6 md:mb-0">
-            <li class="flex">
-              <div
-                class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width={2}
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="h-6 w-6"
-                >
-                  <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-                  <path
-                    d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-                  ></path>
-                </svg>
-              </div>
-              <div class="ml-4 mb-4">
-                <h3
-                  class="mb-2 text-lg font-medium leading-6 text-white"
-                >
-                  Meet Us!
-                </h3>
-                <p class="text-white">Kankanady Road</p>
-                <p class="text-white">Colaco Court</p>
-                <p class="text-white">
-                  Mangaluru, Karnataka, IN
-                </p>
-              </div>
-            </li>
-            <li class="flex">
-              <div
-                class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width={2}
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="h-6 w-6"
-                >
-                  <path
-                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
-                  ></path>
-                  <path d="M15 7a2 2 0 0 1 2 2"></path>
-                  <path d="M15 3a6 6 0 0 1 6 6"></path>
-                </svg>
-              </div>
-              <div class="ml-4 mb-4">
-                <h3
-                  class="mb-2 text-lg font-medium leading-6 text-white"
-                >
-                  We Wanna Hear From You
-                </h3>
-                <p class="text-white">
-                  Mobile: +91 88611 75448
-                </p>
-                <p class="text-white">
-                  Mail: officialfademedia@gmail.com
-                </p>
-              </div>
-            </li>
-            <li class="flex">
-              <div
-                class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width={2}
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="h-6 w-6"
-                >
-                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-                  <path d="M12 7v5l3 3"></path>
-                </svg>
-              </div>
-              <div class="ml-4 mb-4">
-                <h3
-                  class="mb-2 text-lg font-medium leading-6 text-white"
-                >
-                  Working hours
-                </h3>
-                <p class="text-white">
-                  Monday - Friday: 08:00 - 17:00
-                </p>
-                <p class="text-white">
-                  Saturday &amp; Sunday: 08:00 - 12:00
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div class="flex w-1/2 xl:w-3/6 justify-center xl:justify-start">
         <div
-          class="card h-fit max-w-6xl p-5 md:px-12 md:pb-12 w-full rounded-md bg-zinc-800 bg-opacity-30 backdrop-blur-3xl"
-          id="form"
+          class="flex flex-wrap xl:flex-nowrap gap-x-8 items-start border p-10"
         >
-          <form id="contactForm" method="post">
-            <div class="mb-4">
-              <div class="mx-0 mb-1">
-                <div class="mx-0">
-                  <label
-                    for="name"
-                    class="pb-1 text-xs uppercase tracking-wider text-white">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    autocomplete="given-name"
-                    placeholder="Your name"
-                    class="w-full rounded-md border border-gray-500 bg-transparent py-2 pl-2 pr-4 shadow-md sm:mb-0"
-                    name="name"
-                    required
-                  />
-                  <div class="text-red-500 h-3">
-                    {false && "Enter valid Name"}
-                  </div>
-                </div>
-                <div class="mx-0">
-                  <label
-                    for="email"
-                    class="pb-1 text-xs uppercase tracking-wider text-white">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    autocomplete="email"
-                    placeholder="Your email address"
-                    class="w-full rounded-md border border-gray-500 bg-transparent py-2 pl-2 pr-4 shadow-md sm:mb-0"
-                    name="email"
-                    required
-                  />
-                   <div class="text-red-500 h-3">
-                    {false && "Enter valid Email Address"}
-                  </div>
-                </div>
-                <div class="mx-0">
-                  <label
-                    for="phone"
-                    class="pb-1 text-xs uppercase tracking-wider text-white">Phone number</label>
-                  <input
-                    type="text"
-                    id="phone"
-                    autocomplete="tel"
-                    placeholder="Your phone number"
-                    class="w-full rounded-md border border-gray-500 bg-transparent py-2 pl-2 pr-4 shadow-md sm:mb-0"
-                    name="phone"
-                    required
-                  />
-                  <div class="text-red-500 h-3">
-                    {false && "Enter valid Phone Number"}
-                  </div>
-                </div>
-              </div>
-              <div class="mx-0">
-                <label
-                  for="textarea"
-                  class="pb-1 text-xs uppercase tracking-wider text-white">Message</label>
-                <textarea
-                  id="textarea"
-                  name="textarea"
-                  cols={30}
-                  rows={5}
-                  placeholder="Compose your calming message..."
-                  class="w-full rounded-md border border-gray-500 bg-transparent py-2 pl-2 pr-4 shadow-md sm:mb-0"
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <div class="text-center">
-              <button
-                type="submit"
-                class="w-full custom-button-colored text-white px-6 py-3 font-xl rounded-md sm:mb-0 bg-DodgerBlue"
+          <h2 class="text-5xl font-MerriweatherSans">Have Something to Say ?</h2>
+          <br />
+          <form action="#" method="post" class="flex flex-col justify-between w-full xl:w-3/4">
+            Name
+            <input
+              type="text"
+              name="name"
+              class="bg-transparent border-b-2 h-10 outline-none focus:border-b-[#9d74d3] duration-1000"
+            />
+            <br />
+             Email
+            <input
+              type="email"
+              name="email"
+              class="bg-transparent border-b-2 h-10 outline-none focus:border-b-[#9d74d3] duration-1000"
+            />
+            <br />
+             Phone
+            <div class="flex gap-2">
+              <select
+                name="country-code"
+                class="w-1/5 bg-transparent border-b-2 h-10 outline-none focus:border-b-[#9d74d3] duration-1000"
               >
-                Send Message
-              </button>
+                <option value="+91" selected>+91</option>
+              </select>
+              <input
+                type="text"
+                name="mobile"
+                class="w-4/5 bg-transparent border-b-2 h-10 outline-none focus:border-b-[#9d74d3] duration-1000"
+              />
             </div>
+            <br />
+             Message
+            <textarea
+              name="message"
+              cols="30"
+              rows="5"
+              class="bg-transparent border-b-2 outline-none focus:border-b-[#9d74d3] duration-1000"
+            ></textarea>
+            <br>
+            <button type="submit" class="p-3 px-4 rounded-3xl bg-white text-[#9d74d3] hover:text-white hover:bg-[#9d74d3] duration-500 font-Montserrat font-bold">Send Message</button>
           </form>
         </div>
       </div>
-    </div>
   </div>
-</section>
+  <div class="flex justify-between sm:px-36 mt-28">
+  <span>Fade Media © 2023 - Present · All rights reserved.</span>
+  <div>
+    <a href="#">Terms & Conditions</a>
+     &nbsp; | &nbsp;
+    <a href="#">Privacy Policy</a>
+  </div>
+</div>
+</footer>
+
