@@ -55,6 +55,7 @@ module.exports = {
         Inter: "Inter",
         Montserrat: "Montserrat",
         MerriweatherSans: "Merriweather Sans",
+        LeagueSpartan: "League Spartan",
         AbrilFatface: ["Abril Fatface", "serif"],
         OpenSans: ["Open Sans", "sans-serif"],
         PoiretOne: ["Poiret One", "sans-serif"],

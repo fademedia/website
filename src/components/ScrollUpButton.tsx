@@ -18,7 +18,7 @@ const ScrollUpButton: React.FC<ScrollUpButtonProps> = () => {
     <>
       {isVisible && (
         <div
-          className="w-12 h-12 fixed bottom-6 right-6 cursor-pointer flex justify-center items-center transition z-50 custom-button-colored rounded-xl "
+          className="w-12 h-12 fixed bottom-6 right-6 cursor-pointer flex justify-center items-center z-50 bg-darkpastelblue rounded-xl "
           onClick={scrollToTop}
         >
           <svg

@@ -579,6 +579,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.15.tgz#c01d160cd02bde1a4ce09f2c38b2063b66caf870"
   integrity sha512-/IoWYEXl8lqJEx50JqNPT+bI4VNwxb/bg2oOfvG8PiEsDsmHRFvWBVHlohBNn1+QdBf+KbAjU/gb4vlGOSsVWw==
 
+"@fontsource/league-spartan@^5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/league-spartan/-/league-spartan-5.0.17.tgz#d672d196a26177e42a65060383f1d7baf7ad9826"
+  integrity sha512-eDkKxE+/wU8CTRDnX9GBbY8mqifCB4I8wAafrjJHL1vHxCfJIIhBP9azCQ3Q+9nWf4qvo8Lp/DkGKZRvgwpiuA==
+
 "@fontsource/merriweather-sans@^5.0.8":
   version "5.0.8"
   resolved "https://registry.yarnpkg.com/@fontsource/merriweather-sans/-/merriweather-sans-5.0.8.tgz#638d41cb7dbb769efb70585eb802c11c6fa0baf1"

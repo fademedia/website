@@ -29,7 +29,7 @@ import Lottie from "./shared/Lottie";
   id="home"
 >
   <div
-    class="w-full flex flex-col justify-center items-center text-center h-[100vh]"
+    class="w-full flex flex-col justify-center items-center text-center"
   >
     <Div
       initial={{ opacity: 0, y: 10 }}
@@ -37,10 +37,10 @@ import Lottie from "./shared/Lottie";
       transition={{ duration: 0.5, delay: 0.05 }}
     >
       <div
-        class="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-zinc-900  mt-60 sm:px-8 md:px-20 lg:px-4"
+        class="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-zinc-900  mt-72 sm:px-8 md:px-20 lg:px-4"
       >
         <Span
-          classes="md:whitespace-nowrap font-MerriweatherSans font-font-bold text-white tracking-wide sm:leading-[0.5] text-center"
+          classes="md:whitespace-nowrap font-MerriweatherSans font-font-bold text-white tracking-wide md:leading-[0.5] text-center"
         >
           Digital Visionaries.
         </Span>
@@ -49,28 +49,26 @@ import Lottie from "./shared/Lottie";
         >
       </div>
     </Div>
-    <br />
     <div
-      class="text-center text- sm:text-6xl lg:text-7xl xl:text-7xl my-24 font-MerriweatherSans text-white"
+      class="text-center sm:text-7xl lg:text-7xl xl:text-7xl my-24 font-MerriweatherSans text-white"
     >
-      We are <span class="font-PoiretOne">Fade.</span>
+      We are <span class="font-LeagueSpartan sm:text-7xl lg:text-7xl xl:text-7xl text-darkpastelblue">Fade.</span>
     </div>
   </div>
   <div class="w-full flex flex-col items-center">
     <Div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, y: "100%" }}
+      animate={{ opacity: 1, y: "calc(100vh - 50%)" }}
+      transition={{ duration: 1 }}
     >
-      <div class="mt-16 min-w-[320px] min-h-[320px]">
+      <div class="mt-20 min-w-[320px] min-h-[320px]">
         <!-- <Lottie
         LottieSource={"https://lottie.host/2c63b9df-5ecb-46e1-a49b-167d1a174bdc/NewOJ2mug6.lottie"}
         loop={true}
         client:load
       /> -->
         <svg
-          width="377"
-          height="477"
+          class=""
           viewBox="0 0 477 577"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +173,7 @@ import Lottie from "./shared/Lottie";
         </svg>
       </div>
     </Div>
-    <p class="text-center my-40 w-1/2 md:w-3/4 text-xl font-Nunito">
+    <p class="text-center my-40 w-full sm:w-1/2 md:w-3/4 text-xl font-Nunito">
       Established in May 2023, our journey from a Digital Marketing Agency to a
       thriving MarTech startup has been nothing short of remarkable. In just six
       months, our team has expanded from 2 to over 20 members!
