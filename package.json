@@ -17,6 +17,7 @@
     "@fontsource/league-spartan": "^5.0.17",
     "@fontsource/merriweather-sans": "^5.0.8",
     "@fontsource/montserrat": "^5.0.15",
+    "@fontsource/nunito": "^5.0.15",
     "astro": "^3.2.4",
     "astro-capo": "^0.0.1",
     "astro-icon": "^0.8.1",
@@ -26,6 +27,7 @@
     "lqip-modern": "^2.0.0",
     "npm-check-updates": "^16.14.6",
     "react-icons": "^4.11.0",
+    "react-type-animation": "^3.2.0",
     "sass": "^1.69.5",
     "tailwindcss": "^3.3.5"
   },
@@ -33,6 +35,8 @@
     "@astrojs/react": "^3.0.4",
     "@types/lqip-modern": "^1.1.6",
     "@types/node": "^20.9.2",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

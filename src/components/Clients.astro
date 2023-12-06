@@ -25,10 +25,10 @@ const clients = [
       <div class="flex gap-10 flex-wrap justify-center w-3/4">
         {
           clients.map((item) => (
-            <div class="bg-white px-8 py-1 rounded-xl">
+            <div class="bg-white px-8 py-1 rounded-xl grayscale hover:grayscale-0 duration-700">
               <img
                 src={item.logo}
-                class="w-24 h-24 grayscale"
+                class="w-24 h-24"
                 alt={item.client}
               />
             </div>

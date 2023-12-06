@@ -1,6 +1,7 @@
 ---
 import Div from "./framer/Div.astro";
 import Span from "./framer/Span.astro";
+import Typography from "../hooks/Typography";
 import Lottie from "./shared/Lottie";
 ---
 
@@ -28,16 +29,14 @@ import Lottie from "./shared/Lottie";
   class="w-screen flex flex-col justify-around items-center bg-radialgradient"
   id="home"
 >
-  <div
-    class="w-full flex flex-col justify-center items-center text-center"
-  >
+  <div class="w-full flex flex-col justify-center items-center text-center">
     <Div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.05 }}
     >
       <div
-        class="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-zinc-900  mt-72 sm:px-8 md:px-20 lg:px-4"
+        class="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide text-zinc-900 mt-72 sm:px-8 md:px-20 lg:px-4"
       >
         <Span
           classes="md:whitespace-nowrap font-MerriweatherSans font-font-bold text-white tracking-wide md:leading-[0.5] text-center"
@@ -49,11 +48,11 @@ import Lottie from "./shared/Lottie";
         >
       </div>
     </Div>
-    <div
-      class="text-center sm:text-7xl lg:text-7xl xl:text-7xl my-24 font-MerriweatherSans text-white"
+    <h2
+      class="text-6xl sm:text-7xl lg:text-7xl xl:text-7xl my-24 font-MerriweatherSans text-white"
     >
-      We are <span class="font-LeagueSpartan sm:text-7xl lg:text-7xl xl:text-7xl text-darkpastelblue">Fade.</span>
-    </div>
+      <span class="block sm:inline">We are </span>{(<Typography client:load />)}
+    </h2>
   </div>
   <div class="w-full flex flex-col items-center">
     <Div

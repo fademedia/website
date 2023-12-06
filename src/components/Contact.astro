@@ -101,10 +101,10 @@ const data: Array<CountryCode> = await response.json();
           </div>
         </div>
         <div class="inline-flex gap-4 mb-20">
-          <a href="#" aria-label="Instagram">{(<Icon name="instagram-icon" class="w-10 h-10" />)}</a>
-          <a href="#" aria-label="Linkedin">{(<Icon name="linkedin-icon" class="w-10 h-10" />)}</a>
-          <a href="#" aria-label="Facebook">{(<Icon name="facebook-icon" class="w-10 h-10" />)}</a>
-          <a href="#" aria-label="X">{(<Icon name="x-icon" class="w-10 h-10" />)}</a>
+          <a href="https://www.instagram.com/fademedia.in/" target="_blank" aria-label="Instagram">{(<Icon name="instagram-icon" class="w-10 h-10 hover:scale-125 transition-all duration-300" />)}</a>
+          <a href="https://www.linkedin.com/company/fademedia/" target="_blank" aria-label="Linkedin">{(<Icon name="linkedin-icon" class="w-10 h-10 hover:scale-125 transition-all duration-300" />)}</a>
+          <a href="#" target="_blank" aria-label="Facebook">{(<Icon name="facebook-icon" class="w-10 h-10 hover:scale-125 transition-all duration-300" />)}</a>
+          <a href="#" target="_blank" aria-label="X">{(<Icon name="x-icon" class="w-10 h-10 hover:scale-125 transition-all duration-300" />)}</a>
         </div>
       </div>
     </div>
@@ -157,10 +157,10 @@ const data: Array<CountryCode> = await response.json();
               class="w-[4.2rem] bg-transparent border-b-2 h-10 outline-none focus:border-b-darkpastelblue duration-1000"
               required
               >
-              <option selected value="+91">+91</option>
+              
               {
                 data.map((cc) => (
-                  <option class="bg-black" value={cc.dial_code}>
+                  <option class="bg-black text-white" selected={cc.dial_code == "+91" ? true : false } value={cc.dial_code}>
                     {cc.dial_code}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     {`${cc.name} (${cc.code})`}
                   </option>
@@ -193,7 +193,7 @@ const data: Array<CountryCode> = await response.json();
           <br />
           <button
             type="submit"
-            class="p-3 px-4 rounded-3xl bg-white text-darkpastelblue hover:text-white hover:bg-darkpastelblue duration-500 font-Montserrat font-bold"
+            class="p-3 px-4 rounded-3xl hover:bg-white hover:text-darkpastelblue text-white bg-darkpastelblue duration-500 font-Montserrat font-bold"
             >Send Message</button
           >
         </form>
