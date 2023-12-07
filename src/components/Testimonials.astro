@@ -8,13 +8,6 @@ import FaseehAhmed from "@/assets/testimonials/FaseehAhmed.webp";
 const testimonialData = [
   {
     id: 1,
-    name: "Akshay Sharma",
-    role: "Director and COO of Skill Xperts Academy",
-    text: "Thank you so much Ethan, this is one of the best meetings for digital marketing I've had and the extra steps you and your team took were eye-opening. Let me discuss it with my partners about it and I will get back to you and definitely, I will go with your services. My mind is clear that if I opt for your services then I don't even need to take a look at the content!",
-    image: AkshaySharma,
-  },
-  {
-    id: 2,
     name: "Faseeh Ahmed",
     role: "Managing Director at S2FIMEX LLP | Data Engineer at Dell EMC",
     text: "Fade Media epitomizes trust in the industry, driven by their integrity, youthful energy, and unwavering commitment. Under Ethan and Aaron's leadership, it feels like Mission Impossible is underrated. With a steadfast support staff, they effortlessly bring visions to life. For digital marketing, Fade is our go-to choice.",
@@ -28,12 +21,13 @@ const testimonialData = [
     <h2 class="text-5xl text-center py-20 font-MerriweatherSans font-bold">
       Don’t just take our word for it!
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-28">
+    <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-28"> -->
+    <div class="flex justify-center w-full pb-28">
       {
         testimonialData.map((testimonial) => (
           <Div
             key={testimonial.id}
-            classes="p-8 rounded-3xl glassmorphism-testimonials border border-darkpastelblue relative mx-5 md:mx-0 h-full flex flex-col justify-between"
+            classes="p-8 rounded-3xl glassmorphism-testimonials border border-darkpastelblue relative mx-5 md:mx-0 h-full sm:w-[28rem] flex flex-col justify-between"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -49,11 +43,13 @@ const testimonialData = [
                 fill="#65617D"
               />
             </svg>
-            <br>
-            <p class="text-white font-Montserrat text-base">{testimonial.text}</p>
+            <br />
+            <p class="text-white font-Montserrat text-base">
+              {testimonial.text}
+            </p>
             <br />
             <div class="text-left flex flex-col sm:flex-row items-center justify-between md:justify-start gap-2">
-              <div class="w-24">
+              <div class="w-32 flex justify-center">
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}
