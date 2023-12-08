@@ -7,7 +7,17 @@ const ContactForm = () => {
     code: string;
   }
 
+  interface FormData {
+    name : string;
+    email : string;
+    cc: string;
+    phone : string;
+    message : string;
+  }
+
   const [countryCode, setcountryCode] = useState<CountryCode[]>([]);
+  const [formData, setformData] = useState({name:"",email:"",cc:"",phone:"",message:""});
+  const [errors, seterrors] = useState({});
   
   const fetchDetails = async () => {
     const url =
@@ -29,11 +39,28 @@ const ContactForm = () => {
   useEffect(() => {
     fetchDetails();
   }, []);
+
+  const handleChange = (e : any ) => {
+    const { name , value } = e.target;
+    setformData({ ...formData, [name]: value });
+  }
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    setformData(validate(formData));
+  }
+
+  const validate = (values : FormData) => {
+    console.log(values);
+    setformData({ name: "", email: "", cc: "", phone: "", message: "" });
+    return { name: "", email: "", cc: "", phone: "", message: "" };
+  }
   
   return (
     <form
       action="#"
       method="post"
+      onSubmit={handleSubmit}
       className="flex flex-col xl:h-full justify-between w-full xl:w-3/4 text-gray-400"
     >
       <label htmlFor="name">Name</label>
@@ -41,6 +68,8 @@ const ContactForm = () => {
         type="text"
         name="name"
         id="name"
+        onChange={handleChange}
+        value={formData.name}
         className="bg-transparent border-b-2 h-10 outline-none focus:border-b-darkpastelblue duration-1000"
         required
       />
@@ -54,6 +83,8 @@ const ContactForm = () => {
         type="email"
         name="email"
         id="email"
+        onChange={handleChange}
+        value={formData.email}
         className="bg-transparent border-b-2 h-10 outline-none focus:border-b-darkpastelblue duration-1000"
         required
       />
@@ -70,8 +101,9 @@ const ContactForm = () => {
           className="w-[4.2rem] bg-transparent border-b-2 h-10 outline-none focus:border-b-darkpastelblue duration-1000"
           required
         >
-          {countryCode.map((cc) => (
+          {countryCode.map((cc, index) => (
             <option
+              key={index}
               className="bg-cinder text-darkpastelblue"
               selected={cc.dial_code == "+91" ? true : false}
               value={cc.dial_code}
@@ -84,6 +116,8 @@ const ContactForm = () => {
           type="text"
           name="phone"
           id="phone"
+          onChange={handleChange}
+          value={formData.phone}
           className="w-full bg-transparent border-b-2 h-10 outline-none focus:border-b-darkpastelblue duration-1000"
           required
         />
@@ -99,6 +133,8 @@ const ContactForm = () => {
         id="message"
         cols={30}
         rows={5}
+        onChange={handleChange}
+        value={formData.message}
         className="bg-transparent border-b-2 outline-none focus:border-b-darkpastelblue duration-1000"
       ></textarea>
       <br />
