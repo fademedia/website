@@ -14,7 +14,7 @@ import "@fontsource/merriweather-sans/400.css";
 import "@fontsource/merriweather-sans/700.css";
 import "@fontsource/league-spartan/400.css";
 import "@fontsource/nunito/400.css";
-import Navbar from "@/components/Navbar.astro";
+import { Navbar } from "@/components/Navbar.jsx";
 import Footer from "../components/Footer.astro";
 import ScrollUpButton from "../components/ScrollUpButton";
 import Circle from "../components/shared/Circle.astro";
@@ -32,6 +32,8 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/logo.webp" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fademedia.in">
     <meta
       name="description"
       content="Elevate your digital presence with Fade Media, Join us!"
@@ -39,7 +41,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </Head>
   <body>
-    <Navbar/>
+    <Navbar client:load/>
     <slot />
     <ScrollUpButton client:load />
     <style is:global>

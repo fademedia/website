@@ -16,7 +16,7 @@ const FAQBox: React.FC<FAQBoxProps> = ({ defaultOpen, question, answer }) => {
           className="w-full flex justify-between items-center focus:outline-none transition-all duration-500"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <h1 className="mx-4 text-xl text-left text-darkpastelblue">{question}</h1>
+          <div className="mx-4 text-xl text-left text-darkpastelblue">{question}</div>
           {isOpen ? (
             <svg
               className="flex-shrink-0 w-6 h-6 text-[#7b7997]"

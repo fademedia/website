@@ -100,7 +100,7 @@ html {
 }
 
 .navbar-link {
-  @apply text-zinc-200 text-xl leading-6 mx-4 cursor-pointer font-medium hover:scale-105 transition-transform duration-300 pt-2;
+  @apply text-zinc-200 text-base mx-8 cursor-pointer font-MerriweatherSans hover:scale-105 transition-transform duration-300 my-5;
 }
 
 .marquee-left {
