@@ -1,25 +1,4 @@
 /* Typography */
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito&family=Open+Sans&family=Poiret+One&display=swap");
-
-.custom-block-title {
-  @apply text-zinc-200 text-3xl font-bold tracking-normal;
-}
-.custom-block-big-title {
-  @apply text-zinc-200 text-4xl xl:text-5xl font-bold tracking-normal;
-}
-.custom-block-subtitle {
-  @apply text-xs text-zinc-200  tracking-wider font-bold uppercase;
-}
-.custom-content-title {
-  @apply text-zinc-700 text-lg font-bold tracking-normal;
-}
-.custom-content-text-white {
-  @apply text-zinc-700 text-base leading-relaxed;
-}
-.custom-content-text-gray {
-  @apply text-zinc-600 text-base;
-}
-
 .glassmorphism-testimonials {
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(50px);
@@ -49,21 +28,6 @@ html {
   background-color: #555;
 }
 
-/* Borders */
-
-.custom-border-gray {
-  @apply border border-solid border-[rgb(255,255,255,0.15)];
-}
-.custom-border-gray-darker {
-  @apply border border-solid border-zinc-400;
-}
-
-/* Buttons */
-
-.custom-button-colored {
-  @apply rounded-md font-bold bg-DodgerBlue text-zinc-100 flex justify-center items-center hover:bg-blue-700 duration-500 cursor-pointer transition;
-}
-
 /* Navbar */
 
 .navbar {
@@ -73,126 +37,9 @@ html {
   -webkit-backdrop-filter: blur(10px);
 }
 
-.logo ~ span {
-  transition: opacity 0.6s, transform 0.9s;
-}
-
-.logo:hover ~ span {
-  transform: translateX(3.5rem);
-  opacity: 100;
-}
-
-@media (max-width: 640px) {
-  .logo:hover ~ span {
-    transform: translateX(2rem);
-    opacity: 100;
-  }
-  .logo ~ span {
-    transition: opacity 0.3s, transform 0.6s;
-  }
-}
-
-.contact {
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 5px #121212;
-  backdrop-filter: blur(0.2rem);
-  -webkit-backdrop-filter: blur(10px);
-}
-
 .navbar-link {
   @apply text-zinc-200 text-base mx-8 cursor-pointer font-MerriweatherSans hover:scale-105 transition-transform duration-300 my-5;
 }
-
-.marquee-left {
-  text-align: center;
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  -moz-animation: scroll-left 2s linear infinite;
-  -webkit-animation: scroll-left 2s linear infinite;
-  animation: scroll-left 20s linear infinite;
-}
-
-@-moz-keyframes scroll-left {
-  0% {
-    -moz-transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(-100%);
-  }
-}
-
-@-webkit-keyframes scroll-left {
-  0% {
-    -webkit-transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-left {
-  0% {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
-.marquee-right {
-  text-align: center;
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  -moz-animation: scroll-left 2s linear infinite;
-  -webkit-animation: scroll-left 2s linear infinite;
-  animation: scroll-right 20s linear infinite;
-}
-
-@-moz-keyframes scroll-right {
-  0% {
-    -moz-transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(-100%);
-  }
-}
-
-@-webkit-keyframes scroll-right {
-  0% {
-    -webkit-transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-right {
-  0% {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-  100% {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-}
-
-/* .testimonials {
-  background: rgba( 43, 43, 43, 0.3 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-} */
 
 /* Preventing FOUC */
 @font-face {

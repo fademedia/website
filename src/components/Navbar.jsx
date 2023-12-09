@@ -28,21 +28,21 @@ const MobileMenu = ({ isOpen, links, onClose }) => (
   <AnimatePresence>
     {isOpen && (
       <motion.div
-        initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
-        animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
-        exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
-        className="navbar flex flex-col mt-16 md:hidden absolute top-4 left-0 z-50 w-full items-center gap-10 pb-10 border-y border-solid pt-10 bg-black"
+        exit={{ opacity: 0 }}
+        className="navbar-links-container flex flex-col mt-16 md:hidden absolute top-4 left-0 z-50 w-full items-center py-10 border-y border-solid bg-black bg-opacity-50"
       >
-        {links.map(({ label, href, ariaLabel }) => (
-          <NavbarLink
-            key={href}
-            label={label}
-            href={href}
-            ariaLabel={ariaLabel}
-            onClick={onClose}
-          />
-        ))}
+          {links.map(({ label, href, ariaLabel }) => (
+            <NavbarLink
+              key={href}
+              label={label}
+              href={href}
+              ariaLabel={ariaLabel}
+              onClick={onClose}
+            />
+          ))}
       </motion.div>
     )}
   </AnimatePresence>
@@ -85,7 +85,7 @@ export const Navbar = () => {
         isHidden ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="flex justify-between md:justify-center items-center w-full px-5 md:px-0 font-MerriweatherSans">
+      <div className="flex justify-between md:justify-center items-center w-full px-2 md:px-0 font-MerriweatherSans">
         <Logo />
         <motion.div
           initial={{ opacity: 0 }}
