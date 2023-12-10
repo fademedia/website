@@ -30,7 +30,7 @@ const RotatingText = () => {
   return (
     <span
       style={{ position: "relative" }}
-      className="block sm:inline -translate-x-[60%] text-6xl sm:text-7xl lg:text-7xl xl:text-7xl"
+      className="block sm:inline -translate-x-[60%] text-6xl sm:text-6xl lg:text-7xl xl:text-7xl"
     >
       <AnimatePresence>
         <motion.span

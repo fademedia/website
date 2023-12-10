@@ -9,11 +9,11 @@ import ContactForm from "@/hooks/ContactForm";
   <div class="flex justify-center md:justify-around flex-col md:flex-row flex-wrap md:flex-nowrap">
     <div class=" xl:w-1/5 flex flex-col xl:block items-center">
       <div>
-      <Image src={Logo} class="h-20 w-20" alt="Fade Media" />
+      <Image src={Logo} class="h-16 w-16 sm:h-20 sm:w-20" alt="Fade Media" />
       
         <div class="flex items-center gap-5 my-10">
           <svg
-            class="w-8 h-8"
+            class="w-7 h-7 sm:w-8 sm:h-8"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ import ContactForm from "@/hooks/ContactForm";
         <div class="flex items-center gap-5 my-10">
           <svg
             fill="#9d74d3"
-            class="w-8 h-8"
+            class="w-7 h-7 sm:w-8 sm:h-8"
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ import ContactForm from "@/hooks/ContactForm";
         </div>
         <div class="flex items-center gap-5 my-10">
           <svg
-            class="w-8 h-8"
+            class="w-7 h-7 sm:w-8 sm:h-8"
             viewBox="0 0 38 30"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ import ContactForm from "@/hooks/ContactForm";
         </div>
         <div class="flex items-center gap-5 my-10">
           <svg
-            class="h-8 w-8"
+            class="w-7 h-7 sm:w-8 sm:h-8"
             viewBox="0 0 38 38"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -98,15 +98,7 @@ import ContactForm from "@/hooks/ContactForm";
         </div>
       </div>
     </div>
-    <div class="flex w-full px-10 md:px-0 md:w-1/2 xl:w-3/6 justify-center">
-      <div
-        class="flex flex-wrap xl:flex-nowrap gap-x-8 items-start border p-5 sm:p-10"
-      >
-        <h2 class="text-5xl font-MerriweatherSans">Have Something to Say ?</h2>
-        <br />
-        <ContactForm client:idle/>
-      </div>
-    </div>
+      <ContactForm client:idle/>
   </div>
   <div class="flex flex-wrap text-center justify-between sm:px-36 mt-28">
     <span class="w-full xl:w-1/2">Fade Media © 2023 - Present · All rights reserved.</span>

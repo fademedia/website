@@ -82,7 +82,7 @@ const servicesData = [
 ---
 
 <section id="services" class="bg-lineargradientservice font-MerriweatherSans">
-  <h1 class="font-MerriweatherSans text-5xl font-bold text-center">How do we help?</h1>
+  <h1 class="font-MerriweatherSans text-4xl sm:text-5xl font-bold text-center pt-10">How do we help?</h1>
   <br />
   <br />
   <div class="w-full flex justify-center">
@@ -99,7 +99,7 @@ const servicesData = [
       { servicesData.map((item) => (<div
         class="w-60 p-5 rounded-2xl bg-gradient-to-b from-[#1F1114] to-[#0C0415] from-0% to-100% duration-500 hover:-translate-y-6 cursor-default"
       >
-        <Icon name={item.image} class="w-8 h-8 sm:w-9 sm:h-9"/> 
+        <Icon name={item.image} class="w-8 h-8 sm:w-9 sm:h-9 grayscale hover:grayscale-0 sm:grayscale-0 duration-500"/> 
         <div class="font-Nunito text-xl leading-normal font-medium">{item.title}</div>
         <p class="text-sm font-Nunito opacity-75">
           {item.content}
