@@ -32,7 +32,7 @@ const MobileMenu = ({ isOpen, links, onClose }) => (
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
         exit={{ opacity: 0 }}
-        className="navbar-links-container flex flex-col mt-16 md:hidden absolute top-4 left-0 z-50 w-full items-center py-10 border-y border-solid bg-black bg-opacity-50"
+        className="navbar-links-container flex flex-col mt-16 md:hidden absolute top-4 left-0 z-50 w-full items-center py-10 border-y border-solid bg-black"
       >
           {links.map(({ label, href, ariaLabel }) => (
             <NavbarLink

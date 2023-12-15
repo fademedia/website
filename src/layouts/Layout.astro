@@ -27,10 +27,17 @@ const { title } = Astro.props;
 <html lang="en">
   <Head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/logo.webp" />
+    <meta name="theme-color" content="#000">
+    <meta
+      name="description"
+      content="Elevate your digital presence with Fade Media, Join us!"
+    />
+    <meta name="author" content="Fade Media">
+    <meta name="keywords" content="Fade Media, fademedia.in">
     <meta name="generator" content={Astro.generator} />
-    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.fademedia.in" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -41,14 +48,11 @@ const { title } = Astro.props;
       property="og:description"
       content="Elevate your digital presence with Fade Media, Join us!"
     />
+    <meta property="og:site_name" content="Fade Media">
     <meta property="og:url" content="https://www.fademedia.in" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/logo.webp" />
     <meta property="og:image:alt" content="Fade Media Logo" />
-    <meta
-      name="description"
-      content="Elevate your digital presence with Fade Media, Join us!"
-    />
     <title>{title}</title>
   </Head>
   <body>
