@@ -1,51 +1,22 @@
-import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence, color } from "framer-motion";
+import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
-const items = [
-  {
-    id: 1,
-    content: "Fade.",
-    color: "text-darkpastelblue",
-  },
-  {
-    id: 2,
-    content: "Dynamic.",
-    color: "text-darkpastelblue",
-  }
-];
-
-const RotatingText = () => {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setIndex((state) => {
-        if (state >= items.length - 1) return 0;
-        return state + 1;
-      });
-    }, 2000);
-    return () => clearInterval(id);
-  }, []);
-
+const Typography = () => {
   return (
-    <span
-      style={{ position: "relative" }}
-      className="block sm:inline -translate-x-[60%] text-6xl sm:text-6xl lg:text-7xl xl:text-7xl"
-    >
-      <AnimatePresence>
-        <motion.span
-          key={items[index].id}
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -20, opacity: 0 }}
-          transition={{ ease: "easeInOut" }}
-          className={`${items[index].color} absolute`}
-        >
-          {items[index].content}
-        </motion.span>
-      </AnimatePresence>
-    </span>
+    <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        "Fade.",
+        1500, // wait 1s before replacing "Mice" with "Hamsters"
+        "Dynamic.",
+        1500,
+      ]}
+      wrapper="span"
+      speed={1}
+      className="font-LeagueSpartan sm:text-[5rem] lg:text-[5rem] xl:text-[5rem] text-darkpastelblue"
+      repeat={Infinity}
+    />
   );
 };
 
-export default RotatingText;
+export default Typography;
