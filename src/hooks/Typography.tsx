@@ -5,15 +5,14 @@ const Typography = () => {
   return (
     <TypeAnimation
       sequence={[
-        // Same substring at the start will only be typed out once, initially
         "Fade.",
-        1500, // wait 1s before replacing "Mice" with "Hamsters"
+        1500,
         "Dynamic.",
         1500,
       ]}
       wrapper="span"
       speed={1}
-      className="font-LeagueSpartan sm:text-[5rem] lg:text-[5rem] xl:text-[5rem] text-darkpastelblue"
+      className="font-LeagueSpartan leading-relaxed sm:leading-normal text-[4.5rem] xl:text-[5rem] text-darkpastelblue"
       repeat={Infinity}
     />
   );
